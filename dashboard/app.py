@@ -8,9 +8,8 @@ import re
 import os
 import sys
 import subprocess
+import json
 
-# Project root = folder that contains dashboard/app.py
-# Works whether you run from project root or from dashboard/
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # --------------------------------------------------
@@ -294,6 +293,8 @@ with st.sidebar:
             "🛍️  Basket Insights",
             "📦  Inventory",
             "🤖  AI Insights",
+            "📉  Price Insights",
+            "🏪  Competitor Prices",
             "⬆️  Import Data",
         ],
         label_visibility="collapsed"
@@ -301,7 +302,41 @@ with st.sidebar:
 
     st.markdown("<hr>", unsafe_allow_html=True)
 
-    # Data source badge
+    # ── GLOBAL DATE FILTER ─────────────────────────
+    st.markdown('<div style="color:#8b92a5;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px;">📅 Date Range</div>', unsafe_allow_html=True)
+
+    date_preset = st.selectbox(
+        "",
+        ["Last 30 Days", "Last 7 Days", "Last 90 Days", "Last 6 Months", "This Year", "Custom Range"],
+        label_visibility="collapsed",
+        key="date_preset"
+    )
+
+    today = datetime.now().date()
+    if date_preset == "Last 7 Days":
+        default_start = today - timedelta(days=7)
+    elif date_preset == "Last 30 Days":
+        default_start = today - timedelta(days=30)
+    elif date_preset == "Last 90 Days":
+        default_start = today - timedelta(days=90)
+    elif date_preset == "Last 6 Months":
+        default_start = today - timedelta(days=180)
+    elif date_preset == "This Year":
+        default_start = datetime(today.year, 1, 1).date()
+    else:
+        default_start = today - timedelta(days=30)
+
+    if date_preset == "Custom Range":
+        col_d1, col_d2 = st.columns(2)
+        with col_d1:
+            filter_start = st.date_input("From", value=default_start, key="d_start", label_visibility="collapsed")
+        with col_d2:
+            filter_end   = st.date_input("To",   value=today,          key="d_end",   label_visibility="collapsed")
+    else:
+        filter_start = default_start
+        filter_end   = today
+
+    st.markdown("<hr>", unsafe_allow_html=True)
     if os.path.exists("data/stock_loaded.csv"):
         st.markdown("""
         <div style="background:#14532d;border-radius:10px;padding:10px 14px;
@@ -366,6 +401,15 @@ if "Import Data" not in page and df is None:
     st.stop()
 
 if df is not None:
+    # Apply global date filter
+    df = df[
+        (df["date"].dt.date >= filter_start) &
+        (df["date"].dt.date <= filter_end)
+    ]
+    if len(df) == 0:
+        st.warning(f"⚠️ No data found between {filter_start} and {filter_end}. Try a wider date range.")
+        st.stop()
+
     total_revenue  = df["sales"].sum()
     total_orders   = df["transaction_id"].nunique()
     total_products = df["product"].nunique()
@@ -504,7 +548,7 @@ elif "Sales Analytics" in page:
 
 elif "Demand Forecast" in page:
 
-    page_header("Demand Forecast", "Historical demand patterns and trend analysis per product")
+    page_header("Demand Forecast", "Prophet ML forecasting · Historical demand · 7-day predictions per product")
 
     product_list     = sorted(df["product"].unique().tolist())
     selected_product = st.selectbox("Select Product", product_list)
@@ -523,10 +567,119 @@ elif "Demand Forecast" in page:
 
     st.markdown("<br>", unsafe_allow_html=True)
 
+    # ── PROPHET FORECAST SECTION ─────────────────────────────────
+    section("🔮 Prophet ML Forecast — Next 7 Days")
+
+    forecast_file = os.path.join(PROJECT_ROOT, "data", "demand_forecast.csv")
+    has_forecast  = os.path.exists(forecast_file)
+
+    col_gen, col_info = st.columns([2, 3])
+    with col_gen:
+        if st.button("⚡  Generate / Refresh Prophet Forecast", type="primary"):
+            with st.spinner("Running Prophet for all products — takes ~60 seconds..."):
+                result = subprocess.run(
+                    [sys.executable, "ml_models/demand_forecast.py"],
+                    capture_output=True, text=True, cwd=PROJECT_ROOT
+                )
+                if result.returncode == 0:
+                    st.success("✅ Forecast generated!")
+                    has_forecast = True
+                    load_transactions.clear()
+                else:
+                    st.error(f"Prophet error:\n{result.stderr[:400]}")
+    with col_info:
+        if has_forecast:
+            mtime = datetime.fromtimestamp(os.path.getmtime(forecast_file)).strftime("%d %b %Y, %I:%M %p")
+            st.markdown(f'<div class="alert-success">✅ Forecast available · Last generated: {mtime}</div>',
+                        unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="alert-warning">⚠️ No forecast yet — click the button to generate Prophet predictions.</div>',
+                        unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    if has_forecast:
+        try:
+            fc_df = pd.read_csv(forecast_file)
+            fc_df["ds"] = pd.to_datetime(fc_df["ds"])
+            prod_fc = fc_df[fc_df["product"] == selected_product].copy()
+
+            if len(prod_fc) > 0:
+                col_a, col_b = st.columns([3, 2])
+
+                with col_a:
+                    section(f"📈 Prophet Forecast — {selected_product}")
+                    # Historical actuals
+                    hist = pdata.groupby("date")["quantity"].sum().reset_index()
+                    hist.columns = ["ds", "actual"]
+
+                    # Split past predictions vs future
+                    today_ts = pd.Timestamp(datetime.now().date())
+                    past_fc  = prod_fc[prod_fc["ds"] <= today_ts]
+                    future_fc = prod_fc[prod_fc["ds"] > today_ts]
+
+                    fig = go.Figure()
+                    # Actual bars
+                    fig.add_trace(go.Bar(
+                        x=hist["ds"], y=hist["actual"],
+                        name="Actual Sales", marker_color="rgba(99,102,241,0.25)"
+                    ))
+                    # Prophet fitted line
+                    if len(past_fc) > 0 and "yhat_lower" in past_fc.columns:
+                        fig.add_trace(go.Scatter(
+                            x=past_fc["ds"], y=past_fc["yhat"],
+                            mode="lines", name="Prophet Fitted",
+                            line=dict(color="#6366f1", width=2)
+                        ))
+                    # Future forecast with confidence band
+                    if len(future_fc) > 0:
+                        if "yhat_lower" in future_fc.columns:
+                            fig.add_trace(go.Scatter(
+                                x=pd.concat([future_fc["ds"], future_fc["ds"].iloc[::-1]]),
+                                y=pd.concat([future_fc["yhat_upper"], future_fc["yhat_lower"].iloc[::-1]]),
+                                fill="toself", fillcolor="rgba(245,158,11,0.15)",
+                                line=dict(color="rgba(255,255,255,0)"),
+                                name="Confidence Band", showlegend=True
+                            ))
+                        fig.add_trace(go.Scatter(
+                            x=future_fc["ds"], y=future_fc["yhat"].clip(lower=0),
+                            mode="lines+markers", name="7-Day Forecast",
+                            line=dict(color="#f59e0b", width=3),
+                            marker=dict(size=8, color="#f59e0b")
+                        ))
+                    fig.add_vline(x=str(today_ts), line_dash="dash",
+                                  line_color="#94a3b8", annotation_text="Today")
+                    fig.update_layout(title="Actual vs Prophet Predicted Demand")
+                    st.plotly_chart(styled_chart(fig, 380), use_container_width=True)
+
+                with col_b:
+                    section("📋 7-Day Forecast Table")
+                    future_table = future_fc[["ds","yhat"]].copy()
+                    if "yhat_lower" in future_fc.columns:
+                        future_table["yhat_lower"] = future_fc["yhat_lower"].clip(lower=0)
+                        future_table["yhat_upper"] = future_fc["yhat_upper"]
+                    future_table["yhat"] = future_table["yhat"].clip(lower=0).round(1)
+                    future_table["ds"]   = future_table["ds"].dt.strftime("%a, %d %b")
+                    future_table.columns = (["Date","Predicted Units","Min","Max"]
+                                            if "yhat_lower" in future_fc.columns
+                                            else ["Date","Predicted Units"])
+                    st.dataframe(future_table, use_container_width=True, height=280)
+
+                    total_7d = future_table["Predicted Units"].sum()
+                    kpi_card("7-Day Forecast Total", f"{total_7d:.0f} units", icon="📦")
+
+            else:
+                st.info(f"No forecast data found for '{selected_product}'. Regenerate the forecast.")
+        except Exception as e:
+            st.error(f"Could not load forecast: {e}")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── HISTORICAL CHARTS ────────────────────────────────────────
     col_a, col_b = st.columns([3, 2])
 
     with col_a:
-        section(f"📈 Daily Demand — {selected_product}")
+        section(f"📈 Historical Daily Demand — {selected_product}")
         daily              = pdata.groupby("date")["quantity"].sum().reset_index()
         daily["rolling7"]  = daily["quantity"].rolling(7,  min_periods=1).mean()
         daily["rolling30"] = daily["quantity"].rolling(30, min_periods=1).mean()
@@ -539,7 +692,7 @@ elif "Demand Forecast" in page:
         fig.add_trace(go.Scatter(x=daily["date"], y=daily["rolling30"],
                                  mode="lines", name="30-Day Avg",
                                  line=dict(color="#f59e0b", width=2, dash="dot")))
-        fig.update_layout(title="Demand with Rolling Averages")
+        fig.update_layout(title="Historical Demand with Rolling Averages")
         st.plotly_chart(styled_chart(fig, 360), use_container_width=True)
 
     with col_b:
@@ -564,6 +717,8 @@ elif "Demand Forecast" in page:
                     aspect="auto", title="Units Sold — Product × Day of Week")
     fig.update_layout(xaxis_title="", yaxis_title="")
     st.plotly_chart(styled_chart(fig, 380), use_container_width=True)
+
+
 
 
 # ==================================================
@@ -767,6 +922,87 @@ elif "Inventory" in page:
             st.markdown('<div class="alert-success">✅ No seasonal surge expected. Maintain standard inventory levels.</div>',
                         unsafe_allow_html=True)
 
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # ── DEAD STOCK DETECTION ─────────────────────────────────
+        section("💀 Dead Stock Detection")
+        st.caption("Products with zero or near-zero sales in the last 30 days but still sitting in stock.")
+
+        latest_date  = df["date"].max()
+        last30       = df[df["date"] >= latest_date - pd.Timedelta(days=30)]
+        sold_last30  = last30.groupby("product")["quantity"].sum().reset_index()
+        sold_last30.columns = ["product", "sold_last_30d"]
+
+        if inventory is not None and "available_stock" in inventory.columns:
+            dead_check = pd.merge(
+                inventory[["product","available_stock","stock_loaded"]].copy(),
+                sold_last30, on="product", how="left"
+            )
+            dead_check["sold_last_30d"] = dead_check["sold_last_30d"].fillna(0)
+
+            # Dead = sold < 5 units in 30 days AND stock > 20 units
+            dead_stock = dead_check[
+                (dead_check["sold_last_30d"] < 5) &
+                (dead_check["available_stock"] > 20)
+            ].copy()
+
+            # Slow movers = sold < 20% of average
+            avg_sold = dead_check["sold_last_30d"].mean()
+            slow_stock = dead_check[
+                (dead_check["sold_last_30d"] < avg_sold * 0.2) &
+                (dead_check["available_stock"] > 10) &
+                (dead_check["sold_last_30d"] >= 5)
+            ].copy()
+
+            kd1, kd2, kd3 = st.columns(3)
+            with kd1: kpi_card("Dead Stock Products", f"{len(dead_stock)}", delta="Zero/near-zero sales 30d", delta_type="down", icon="💀")
+            with kd2: kpi_card("Slow Movers", f"{len(slow_stock)}", icon="🐢")
+            with kd3:
+                # Estimate capital locked
+                if "price" in df.columns:
+                    price_map = df.groupby("product")["price"].mean()
+                    dead_value = dead_stock["product"].map(price_map).fillna(0) * dead_stock["available_stock"]
+                    kpi_card("Capital Locked", f"₹{dead_value.sum():,.0f}", delta="In dead stock", delta_type="down", icon="💸")
+                else:
+                    kpi_card("Slow Movers Found", f"{len(slow_stock)}", icon="📦")
+
+            st.markdown("<br>", unsafe_allow_html=True)
+
+            if len(dead_stock) > 0:
+                dead_stock = dead_stock.sort_values("available_stock", ascending=False)
+                for _, row in dead_stock.head(10).iterrows():
+                    last_sale_rows = df[df["product"] == row["product"]]
+                    if len(last_sale_rows) > 0:
+                        last_sale = last_sale_rows["date"].max().strftime("%d %b %Y")
+                        days_since = (latest_date - last_sale_rows["date"].max()).days
+                    else:
+                        last_sale  = "Never"
+                        days_since = 999
+                    st.markdown(f"""
+                    <div class="alert-critical">
+                    💀 <strong>{row['product']}</strong> —
+                    Only <strong>{int(row['sold_last_30d'])} units</strong> sold in last 30 days ·
+                    <strong>{int(row['available_stock'])} units</strong> still in stock ·
+                    Last sale: {last_sale} ({days_since} days ago) ·
+                    <strong>Action: Run a discount or stop reordering</strong>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                st.markdown('<div class="alert-success">✅ No dead stock detected. All products have recent sales.</div>',
+                            unsafe_allow_html=True)
+
+            if len(slow_stock) > 0:
+                st.markdown("**🐢 Slow Movers — Consider Promotions:**")
+                for _, row in slow_stock.head(8).iterrows():
+                    st.markdown(f"""
+                    <div class="alert-warning">
+                    🐢 <strong>{row['product']}</strong> —
+                    <strong>{int(row['sold_last_30d'])} units</strong> sold in 30 days ·
+                    {int(row['available_stock'])} units in stock ·
+                    Consider a <strong>combo offer or shelf relocation</strong>
+                    </div>
+                    """, unsafe_allow_html=True)
+
     else:
         st.markdown("""
         <div class="alert-warning">
@@ -911,12 +1147,480 @@ elif "AI Insights" in page:
                   title="Projected Daily Demand — Next 7 Days", markers=True)
     st.plotly_chart(styled_chart(fig, 360), use_container_width=True)
 
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── SMART COMBO OFFER GENERATOR ──────────────────────────────
+    section("🎁 Smart Combo Offer Generator")
+    st.caption("AI-generated bundle deals based on purchase patterns, price data and expected revenue lift.")
+
+    if basket_rules is not None and len(basket_rules) > 0:
+        price_map  = df.groupby("product")["price"].mean().to_dict()
+        demand_map = df.groupby("product")["quantity"].sum().to_dict()
+
+        combos = []
+        for _, row in basket_rules.sort_values("lift", ascending=False).head(30).iterrows():
+            p1   = str(row["antecedents"])
+            p2   = str(row["consequents"])
+            conf = float(row["confidence"])
+            lift = float(row["lift"])
+            sup  = float(row["support"])
+
+            p1_price  = price_map.get(p1, 0)
+            p2_price  = price_map.get(p2, 0)
+            if p1_price == 0 or p2_price == 0:
+                continue
+
+            bundle_price = round((p1_price + p2_price) * 0.90)  # 10% discount
+            saving       = round((p1_price + p2_price) - bundle_price)
+            p1_demand    = demand_map.get(p1, 1)
+            # Expected extra units from bundling = lift × support × total transactions
+            total_txns   = df["transaction_id"].nunique()
+            expected_extra = round(sup * lift * total_txns * 0.05)  # conservative 5% take rate
+            revenue_lift = round(expected_extra * bundle_price)
+
+            combos.append({
+                "product_1":    p1,
+                "product_2":    p2,
+                "confidence":   conf,
+                "lift":         lift,
+                "p1_price":     p1_price,
+                "p2_price":     p2_price,
+                "bundle_price": bundle_price,
+                "saving":       saving,
+                "expected_extra_sales": expected_extra,
+                "monthly_revenue_lift": revenue_lift,
+            })
+
+        combos = sorted(combos, key=lambda x: x["monthly_revenue_lift"], reverse=True)
+
+        if combos:
+            c1, c2 = st.columns(2)
+            for i, combo in enumerate(combos[:6]):
+                conf_pct = combo["confidence"] * 100
+                lift_val = combo["lift"]
+                with (c1 if i % 2 == 0 else c2):
+                    color = "#f59e0b" if i < 2 else "#3b82f6" if i < 4 else "#8b5cf6"
+                    st.markdown(f"""
+                    <div class="chart-card" style="margin-bottom:14px;border-left:4px solid {color};">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                            <span style="font-size:11px;color:#8b92a5;font-weight:600;
+                                         text-transform:uppercase;">Combo #{i+1}</span>
+                            <span style="background:#f0fdf4;color:#16a34a;font-size:11px;
+                                         font-weight:700;padding:2px 8px;border-radius:6px;">
+                                +₹{combo['monthly_revenue_lift']:,}/mo
+                            </span>
+                        </div>
+                        <div style="font-size:15px;font-weight:700;color:#0f1117;margin-bottom:6px;">
+                            {combo['product_1']}<br>
+                            <span style="color:#94a3b8;font-size:13px;">+</span><br>
+                            {combo['product_2']}
+                        </div>
+                        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;">
+                            <span style="background:#fefce8;color:#854d0e;font-size:11px;
+                                         font-weight:600;padding:3px 8px;border-radius:6px;">
+                                ₹{combo['p1_price']:.0f} + ₹{combo['p2_price']:.0f} → ₹{combo['bundle_price']:.0f}
+                            </span>
+                            <span style="background:#eff6ff;color:#1d4ed8;font-size:11px;
+                                         font-weight:600;padding:3px 8px;border-radius:6px;">
+                                Save ₹{combo['saving']:.0f} (10% off)
+                            </span>
+                        </div>
+                        <div style="font-size:12px;color:#64748b;">
+                            {conf_pct:.0f}% co-purchase rate ·
+                            {lift_val:.1f}x lift ·
+                            ~{combo['expected_extra_sales']} extra bundles/mo
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
+    else:
+        st.markdown('<div class="alert-warning">⚠️ Run Basket Analysis first to generate combo recommendations.</div>',
+                    unsafe_allow_html=True)
+
 
 # ==================================================
-#   PAGE: IMPORT DATA  ← NEW
+#   PAGE: PRICE INSIGHTS  ← NEW (Feature 6)
 # ==================================================
 
-elif "Import Data" in page:
+elif "Price Insights" in page:
+
+    page_header("Price Insights", "Price sensitivity · Elasticity · Optimal pricing signals")
+
+    # ── KPIs ─────────────────────────────────────────────────────
+    avg_price   = df["price"].mean()
+    price_range = df["price"].max() - df["price"].min()
+    k1, k2, k3 = st.columns(3)
+    with k1: kpi_card("Avg Product Price",  f"₹{avg_price:.0f}",   icon="💰")
+    with k2: kpi_card("Price Range",        f"₹{price_range:.0f}", icon="📊")
+    with k3: kpi_card("Products Analyzed",  f"{df['product'].nunique()}", icon="📦")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── PRICE ELASTICITY PER PRODUCT ─────────────────────────────
+    section("📉 Price Elasticity Analysis")
+    st.caption("Elasticity = % change in quantity / % change in price. Negative = demand falls as price rises.")
+
+    product_list_pe = sorted(df["product"].unique().tolist())
+    pe_product      = st.selectbox("Select product to analyze", product_list_pe, key="pe_prod")
+    pe_data         = df[df["product"] == pe_product].copy()
+
+    # Bucket prices into 5 bins
+    pe_data["price_bucket"] = pd.cut(pe_data["price"], bins=5)
+    pe_grouped = (
+        pe_data.groupby("price_bucket", observed=True)
+        .agg(avg_price=("price","mean"), total_qty=("quantity","sum"), txn_count=("transaction_id","nunique"))
+        .reset_index()
+        .dropna()
+        .sort_values("avg_price")
+    )
+
+    if len(pe_grouped) >= 2:
+        col_a, col_b = st.columns([3, 2])
+        with col_a:
+            fig = go.Figure()
+            fig.add_trace(go.Bar(
+                x=pe_grouped["avg_price"].round(1).astype(str) + "₹",
+                y=pe_grouped["total_qty"],
+                name="Units Sold",
+                marker_color=COLORS["palette"][:len(pe_grouped)]
+            ))
+            fig.update_layout(title=f"Units Sold at Different Price Points — {pe_product}",
+                               xaxis_title="Avg Price (₹)", yaxis_title="Total Units Sold")
+            st.plotly_chart(styled_chart(fig, 340), use_container_width=True)
+
+        with col_b:
+            # Compute elasticity between first and last price bucket
+            p1_row = pe_grouped.iloc[0]
+            p2_row = pe_grouped.iloc[-1]
+            if p1_row["avg_price"] > 0 and p1_row["total_qty"] > 0:
+                pct_price_change = (p2_row["avg_price"] - p1_row["avg_price"]) / p1_row["avg_price"]
+                pct_qty_change   = (p2_row["total_qty"] - p1_row["total_qty"]) / p1_row["total_qty"]
+                elasticity = round(pct_qty_change / pct_price_change, 2) if pct_price_change != 0 else 0
+            else:
+                elasticity = 0
+
+            if elasticity < -1:
+                e_label = "🔴 Highly Elastic"
+                e_advice = "Customers are very price-sensitive. A small price cut can significantly boost volume. Consider competitive pricing."
+            elif elasticity < 0:
+                e_label = "🟡 Moderately Elastic"
+                e_advice = "Moderate price sensitivity. Small discounts can grow volume. Maintain competitive pricing."
+            elif elasticity == 0:
+                e_label = "⚪ Neutral"
+                e_advice = "Price has little measured impact. May need more data."
+            else:
+                e_label = "🟢 Inelastic"
+                e_advice = "Customers buy regardless of price. You may have room to increase price without losing volume — a premium strategy could work."
+
+            st.markdown(f"""
+            <div class="chart-card">
+                <div class="kpi-label">Price Elasticity Score</div>
+                <div class="kpi-value">{elasticity}</div>
+                <div style="margin-top:10px;font-size:14px;font-weight:700;">{e_label}</div>
+                <div style="margin-top:8px;font-size:13px;color:#64748b;line-height:1.5;">{e_advice}</div>
+            </div>
+            """, unsafe_allow_html=True)
+    else:
+        st.info("Not enough price variation data for this product in the selected date range.")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── PRICE SENSITIVITY SCATTER — ALL PRODUCTS ─────────────────
+    section("🗂️ Price vs Volume — All Products")
+    pv = df.groupby("product").agg(
+        avg_price=("price","mean"),
+        total_qty=("quantity","sum"),
+        total_rev=("sales","sum"),
+        category=("category","first")
+    ).reset_index()
+
+    fig = px.scatter(
+        pv, x="avg_price", y="total_qty",
+        size="total_rev", color="category",
+        hover_name="product",
+        color_discrete_sequence=COLORS["palette"],
+        title="Avg Price vs Total Units Sold (bubble size = revenue)",
+        labels={"avg_price":"Avg Price (₹)","total_qty":"Total Units Sold"}
+    )
+    fig.update_traces(marker=dict(opacity=0.75, line=dict(width=1, color="#fff")))
+    st.plotly_chart(styled_chart(fig, 420), use_container_width=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── TOP REVENUE OPPORTUNITIES ─────────────────────────────────
+    section("💡 Pricing Recommendations")
+
+    pv_sorted = pv.sort_values("total_qty", ascending=False)
+    # High volume + low price = potential to slightly raise price
+    high_vol_low_price = pv_sorted[pv_sorted["avg_price"] < pv["avg_price"].median()].head(5)
+    # Low volume + high price = potential to discount
+    low_vol_high_price = pv_sorted[pv_sorted["avg_price"] > pv["avg_price"].median()].tail(5)
+
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown("**📈 Consider Slight Price Increase** *(high volume, below avg price)*")
+        for _, row in high_vol_low_price.iterrows():
+            st.markdown(f"""
+            <div class="alert-success">
+            💹 <strong>{row['product']}</strong> — ₹{row['avg_price']:.0f} avg price ·
+            {int(row['total_qty']):,} units sold · High demand suggests room for +5–10% price increase
+            </div>
+            """, unsafe_allow_html=True)
+    with c2:
+        st.markdown("**📉 Consider Discount or Promotion** *(above avg price, low volume)*")
+        for _, row in low_vol_high_price.iterrows():
+            st.markdown(f"""
+            <div class="alert-warning">
+            💸 <strong>{row['product']}</strong> — ₹{row['avg_price']:.0f} avg price ·
+            {int(row['total_qty']):,} units sold · Discount may unlock volume
+            </div>
+            """, unsafe_allow_html=True)
+
+
+# ==================================================
+#   PAGE: COMPETITOR PRICES  ← NEW (Feature 10)
+# ==================================================
+
+elif "Competitor Prices" in page:
+
+    page_header("Competitor Price Tracker", "Your store prices vs BigBasket & Blinkit market rates")
+
+    # Reference market prices (BigBasket / Blinkit approximate prices for TN market)
+    # These are updated manually or via scraping
+    MARKET_PRICES = {
+        "Aavin Milk 500ml":            26,
+        "Aavin Milk 1L":               50,
+        "Aavin Curd 400g":             36,
+        "Aavin Butter 100g":           57,
+        "Amul Butter 100g":            60,
+        "Amul Pure Ghee 500g":         320,
+        "Britannia Bread 400g":        42,
+        "Modern Bread 400g":           40,
+        "Parle-G 500g":                58,
+        "Good Day Butter Cookies 150g":32,
+        "Bru Coffee Powder 200g":      190,
+        "Red Label Tea 500g":          200,
+        "Coca Cola 750ml":             48,
+        "Pepsi 750ml":                 45,
+        "Sprite 750ml":                45,
+        "Mango Frooti 200ml":          22,
+        "Bovonto 300ml":               22,
+        "Horlicks 500g":               310,
+        "Boost 500g":                  290,
+        "Maggi Noodles 70g":           15,
+        "Yippee Noodles 70g":          15,
+        "Lay's Classic Salted 52g":    22,
+        "Kurkure Masala Munch 78g":    22,
+        "Cadbury Dairy Milk 45g":      42,
+        "Cadbury 5 Star 22g":          22,
+        "KitKat 2F 18g":               22,
+        "Munch 18g":                   12,
+        "Ferrero Rocher 16pc":         460,
+        "Cadbury Celebrations 281g":   360,
+        "Colgate MaxFresh 150g":       98,
+        "Lux Soap 100g":               48,
+        "Lifebuoy Soap 100g":          40,
+        "Clinic Plus Shampoo 200ml":   150,
+        "Head & Shoulders 200ml":      205,
+        "Dettol Handwash 200ml":       95,
+        "Surf Excel 1kg":              180,
+        "Vim Bar 200g":                38,
+        "Harpic Power Plus 500ml":     150,
+        "Aashirvaad Atta 5kg":         280,
+        "Toor Dal 1kg":                135,
+        "Idhayam Gingelly Oil 500ml":  135,
+        "Fortune Sunflower Oil 1L":    160,
+        "Tata Salt 1kg":               26,
+        "Sugar 1kg":                   50,
+        "MTR Sambar Powder 200g":      65,
+        "Aachi Chilli Powder 200g":    58,
+        "Aachi Turmeric Powder 100g":  38,
+        "Pampers Pants M 48pc":        720,
+        "Huggies Wonder Pants M 42pc": 650,
+        "Good Knight Liquid 45ml":     170,
+        "All Out Refill 45ml":         145,
+    }
+
+    # Scraper function (requires requests + bs4, works in local env with internet)
+    def try_scrape_bigbasket(product_name):
+        """
+        Attempts to fetch price from BigBasket.
+        Returns None if fails (JS-rendered site needs Selenium for full scraping).
+        This is a placeholder for production use.
+        """
+        try:
+            import requests
+            query = product_name.replace(" ", "+")
+            url   = f"https://www.bigbasket.com/ps/?q={query}"
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "Accept-Language": "en-IN,en;q=0.9"
+            }
+            resp = requests.get(url, headers=headers, timeout=5)
+            # BigBasket is JS-rendered; direct scraping needs Selenium
+            # This returns None for now — reference prices are used as fallback
+            return None
+        except:
+            return None
+
+    # Cache file for scraped prices
+    cache_file = os.path.join(PROJECT_ROOT, "data", "competitor_prices.json")
+
+    def load_cached_prices():
+        if os.path.exists(cache_file):
+            with open(cache_file, "r") as f:
+                data = json.load(f)
+            return data.get("prices", {}), data.get("updated", "Never")
+        return {}, "Never"
+
+    def save_cached_prices(prices):
+        with open(cache_file, "w") as f:
+            json.dump({"prices": prices, "updated": datetime.now().strftime("%d %b %Y, %I:%M %p")}, f)
+
+    cached_prices, last_updated = load_cached_prices()
+
+    # Merge: cached > reference fallback
+    effective_market = {**MARKET_PRICES, **cached_prices}
+
+    # ── Header controls ──────────────────────────────────────────
+    col_h1, col_h2, col_h3 = st.columns([2,2,2])
+    with col_h1:
+        if st.button("🔄  Refresh from Web (BigBasket)", use_container_width=True):
+            with st.spinner("Fetching prices from BigBasket..."):
+                new_prices = {}
+                products_to_check = list(MARKET_PRICES.keys())[:20]
+                for prod in products_to_check:
+                    scraped = try_scrape_bigbasket(prod)
+                    if scraped:
+                        new_prices[prod] = scraped
+                if new_prices:
+                    save_cached_prices(new_prices)
+                    st.success(f"✅ Updated {len(new_prices)} prices from BigBasket!")
+                else:
+                    st.info("ℹ️ Live scraping requires Selenium for JS sites. Showing reference prices. Install selenium + chromedriver for live data.")
+    with col_h2:
+        st.markdown(f'<div class="alert-info" style="margin-top:0">📅 Prices last updated: <strong>{last_updated}</strong></div>',
+                    unsafe_allow_html=True)
+    with col_h3:
+        source_label = "BigBasket + Blinkit Reference" if not cached_prices else f"Live ({len(cached_prices)} products) + Reference"
+        st.markdown(f'<div class="alert-success" style="margin-top:0">🏪 Source: {source_label}</div>',
+                    unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── Build comparison table ───────────────────────────────────
+    your_prices = df.groupby("product")["price"].mean().reset_index()
+    your_prices.columns = ["product", "your_price"]
+
+    comp_rows = []
+    for _, row in your_prices.iterrows():
+        prod = row["product"]
+        if prod not in effective_market:
+            continue
+        market_p = effective_market[prod]
+        your_p   = round(row["your_price"], 1)
+        diff     = round(your_p - market_p, 1)
+        diff_pct = round((diff / market_p) * 100, 1) if market_p > 0 else 0
+        if diff_pct < -5:
+            status = "✅ Cheaper"
+        elif diff_pct > 5:
+            status = "🔴 Expensive"
+        else:
+            status = "🟡 On Par"
+        comp_rows.append({
+            "product":    prod,
+            "your_price": your_p,
+            "market_price": market_p,
+            "diff":       diff,
+            "diff_pct":   diff_pct,
+            "status":     status,
+        })
+
+    comp_df = pd.DataFrame(comp_rows)
+
+    if len(comp_df) == 0:
+        st.warning("No matching products found between your store and market reference data.")
+    else:
+        # KPIs
+        cheaper   = len(comp_df[comp_df["status"] == "✅ Cheaper"])
+        expensive = len(comp_df[comp_df["status"] == "🔴 Expensive"])
+        on_par    = len(comp_df[comp_df["status"] == "🟡 On Par"])
+
+        k1, k2, k3, k4 = st.columns(4)
+        with k1: kpi_card("Products Compared", f"{len(comp_df)}", icon="🔍")
+        with k2: kpi_card("Cheaper than Market", f"{cheaper}", delta="Competitive advantage", delta_type="up", icon="✅")
+        with k3: kpi_card("Above Market Price", f"{expensive}", delta="Risk of losing customers", delta_type="down", icon="🔴")
+        with k4: kpi_card("On Par with Market", f"{on_par}", icon="🟡")
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # Category filter
+        cats_cp = ["All"] + sorted(df["category"].unique().tolist())
+        cat_sel = st.selectbox("Filter by category", cats_cp, key="cp_cat")
+
+        if cat_sel != "All":
+            cat_prods  = df[df["category"] == cat_sel]["product"].unique()
+            comp_df_f  = comp_df[comp_df["product"].isin(cat_prods)]
+        else:
+            comp_df_f  = comp_df
+
+        col_a, col_b = st.columns([3, 2])
+
+        with col_a:
+            section("💰 Your Price vs Market Price")
+            plot_cp = comp_df_f.sort_values("diff_pct", ascending=False).head(20)
+            colors  = ["#ef4444" if x > 5 else "#22c55e" if x < -5 else "#f59e0b"
+                       for x in plot_cp["diff_pct"]]
+            fig = go.Figure(go.Bar(
+                x=plot_cp["diff_pct"],
+                y=plot_cp["product"],
+                orientation="h",
+                marker_color=colors,
+                text=plot_cp["diff_pct"].apply(lambda x: f"{x:+.1f}%"),
+                textposition="outside"
+            ))
+            fig.add_vline(x=0, line_color="#94a3b8", line_dash="dash")
+            fig.update_layout(
+                title="Price Difference vs Market (% above/below)",
+                yaxis=dict(autorange="reversed"),
+                xaxis_title="% vs Market Price"
+            )
+            st.plotly_chart(styled_chart(fig, 420), use_container_width=True)
+
+        with col_b:
+            section("📋 Price Comparison Table")
+            display_cp            = comp_df_f[["product","your_price","market_price","diff_pct","status"]].copy()
+            display_cp.columns    = ["Product","Your ₹","Market ₹","Diff %","Status"]
+            display_cp["Diff %"]  = display_cp["Diff %"].apply(lambda x: f"{x:+.1f}%")
+            st.dataframe(display_cp.sort_values("Status"), use_container_width=True, height=400)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        section("🚨 Action Alerts")
+        overpriced = comp_df_f[comp_df_f["diff_pct"] > 10].sort_values("diff_pct", ascending=False)
+        underpriced = comp_df_f[comp_df_f["diff_pct"] < -10].sort_values("diff_pct")
+
+        if len(overpriced) > 0:
+            for _, row in overpriced.head(5).iterrows():
+                st.markdown(f"""
+                <div class="alert-critical">
+                🔴 <strong>{row['product']}</strong> — You charge ₹{row['your_price']} vs
+                market ₹{row['market_price']} (<strong>{row['diff_pct']:+.1f}%</strong>).
+                Risk of customer switching to BigBasket/Blinkit.
+                Consider reducing to ₹{round(row['market_price'] * 1.03)} to stay competitive.
+                </div>
+                """, unsafe_allow_html=True)
+
+        if len(underpriced) > 0:
+            for _, row in underpriced.head(5).iterrows():
+                st.markdown(f"""
+                <div class="alert-success">
+                ✅ <strong>{row['product']}</strong> — You charge ₹{row['your_price']} vs
+                market ₹{row['market_price']} (<strong>{row['diff_pct']:+.1f}%</strong>).
+                You're cheaper — highlight this as a competitive advantage at billing.
+                </div>
+                """, unsafe_allow_html=True)
+
+
 
     page_header("Import Store Data", "Connect your supermarket's sales & stock data to RetailX")
 
@@ -1196,11 +1900,7 @@ elif "Import Data" in page:
                     ("ml_models/basket_analysis.py",  "Basket Analysis"),
                 ]:
                     try:
-                        r = subprocess.run(
-                            [sys.executable, script],
-                            capture_output=True, text=True,
-                            cwd=PROJECT_ROOT
-                        )
+                        r = subprocess.run([sys.executable, script], capture_output=True, text=True, cwd=PROJECT_ROOT)
                         if r.returncode != 0:
                             errors.append(f"{label}: {r.stderr[:150]}")
                     except Exception as e:
