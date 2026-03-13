@@ -1,0 +1,4386 @@
+date,product,quantity
+2024-01-01,Biscuits,17
+2024-01-01,Bread,22
+2024-01-01,Butter,17
+2024-01-01,Chips,15
+2024-01-01,Chocolate,17
+2024-01-01,Cooking Oil,15
+2024-01-01,Milk,8
+2024-01-01,Rice,11
+2024-01-01,Shampoo,18
+2024-01-01,Soap,10
+2024-01-01,Soft Drink,9
+2024-01-01,Yogurt,21
+2024-01-02,Biscuits,22
+2024-01-02,Bread,12
+2024-01-02,Butter,17
+2024-01-02,Chips,18
+2024-01-02,Chocolate,15
+2024-01-02,Cooking Oil,21
+2024-01-02,Milk,18
+2024-01-02,Rice,21
+2024-01-02,Shampoo,13
+2024-01-02,Soap,16
+2024-01-02,Soft Drink,27
+2024-01-02,Yogurt,3
+2024-01-03,Biscuits,18
+2024-01-03,Bread,32
+2024-01-03,Butter,10
+2024-01-03,Chips,15
+2024-01-03,Chocolate,14
+2024-01-03,Cooking Oil,22
+2024-01-03,Milk,20
+2024-01-03,Rice,15
+2024-01-03,Shampoo,1
+2024-01-03,Soap,12
+2024-01-03,Soft Drink,8
+2024-01-03,Yogurt,21
+2024-01-04,Biscuits,15
+2024-01-04,Bread,33
+2024-01-04,Butter,18
+2024-01-04,Chips,20
+2024-01-04,Chocolate,14
+2024-01-04,Cooking Oil,14
+2024-01-04,Milk,18
+2024-01-04,Rice,16
+2024-01-04,Shampoo,18
+2024-01-04,Soap,33
+2024-01-04,Soft Drink,11
+2024-01-04,Yogurt,8
+2024-01-05,Biscuits,26
+2024-01-05,Bread,16
+2024-01-05,Butter,21
+2024-01-05,Chips,20
+2024-01-05,Chocolate,23
+2024-01-05,Cooking Oil,16
+2024-01-05,Milk,19
+2024-01-05,Rice,21
+2024-01-05,Shampoo,21
+2024-01-05,Soap,9
+2024-01-05,Soft Drink,23
+2024-01-05,Yogurt,24
+2024-01-06,Biscuits,21
+2024-01-06,Bread,12
+2024-01-06,Butter,27
+2024-01-06,Chips,19
+2024-01-06,Chocolate,27
+2024-01-06,Cooking Oil,20
+2024-01-06,Milk,11
+2024-01-06,Rice,6
+2024-01-06,Shampoo,11
+2024-01-06,Soap,12
+2024-01-06,Soft Drink,13
+2024-01-06,Yogurt,21
+2024-01-07,Biscuits,25
+2024-01-07,Bread,17
+2024-01-07,Butter,21
+2024-01-07,Chips,16
+2024-01-07,Chocolate,29
+2024-01-07,Cooking Oil,26
+2024-01-07,Milk,19
+2024-01-07,Rice,25
+2024-01-07,Shampoo,39
+2024-01-07,Soap,24
+2024-01-07,Soft Drink,11
+2024-01-07,Yogurt,30
+2024-01-08,Biscuits,17
+2024-01-08,Bread,25
+2024-01-08,Butter,20
+2024-01-08,Chips,17
+2024-01-08,Chocolate,11
+2024-01-08,Cooking Oil,5
+2024-01-08,Milk,19
+2024-01-08,Rice,24
+2024-01-08,Shampoo,13
+2024-01-08,Soap,9
+2024-01-08,Soft Drink,23
+2024-01-08,Yogurt,23
+2024-01-09,Biscuits,23
+2024-01-09,Bread,10
+2024-01-09,Butter,12
+2024-01-09,Chips,11
+2024-01-09,Chocolate,12
+2024-01-09,Cooking Oil,14
+2024-01-09,Milk,26
+2024-01-09,Rice,14
+2024-01-09,Shampoo,29
+2024-01-09,Soap,20
+2024-01-09,Soft Drink,17
+2024-01-09,Yogurt,13
+2024-01-10,Bread,20
+2024-01-10,Butter,12
+2024-01-10,Chips,10
+2024-01-10,Chocolate,15
+2024-01-10,Cooking Oil,18
+2024-01-10,Milk,8
+2024-01-10,Rice,28
+2024-01-10,Shampoo,19
+2024-01-10,Soap,15
+2024-01-10,Soft Drink,8
+2024-01-10,Yogurt,12
+2024-01-11,Biscuits,14
+2024-01-11,Bread,12
+2024-01-11,Butter,5
+2024-01-11,Chips,24
+2024-01-11,Chocolate,22
+2024-01-11,Cooking Oil,16
+2024-01-11,Milk,18
+2024-01-11,Rice,20
+2024-01-11,Shampoo,18
+2024-01-11,Soap,13
+2024-01-11,Soft Drink,10
+2024-01-11,Yogurt,27
+2024-01-12,Biscuits,17
+2024-01-12,Bread,21
+2024-01-12,Butter,15
+2024-01-12,Chips,25
+2024-01-12,Chocolate,22
+2024-01-12,Cooking Oil,7
+2024-01-12,Milk,15
+2024-01-12,Rice,14
+2024-01-12,Shampoo,18
+2024-01-12,Soap,11
+2024-01-12,Soft Drink,19
+2024-01-12,Yogurt,29
+2024-01-13,Biscuits,18
+2024-01-13,Bread,16
+2024-01-13,Butter,23
+2024-01-13,Chips,17
+2024-01-13,Chocolate,15
+2024-01-13,Cooking Oil,29
+2024-01-13,Milk,9
+2024-01-13,Rice,8
+2024-01-13,Shampoo,14
+2024-01-13,Soap,13
+2024-01-13,Soft Drink,19
+2024-01-13,Yogurt,14
+2024-01-14,Biscuits,20
+2024-01-14,Bread,10
+2024-01-14,Butter,19
+2024-01-14,Chips,13
+2024-01-14,Chocolate,19
+2024-01-14,Cooking Oil,15
+2024-01-14,Milk,15
+2024-01-14,Rice,20
+2024-01-14,Shampoo,25
+2024-01-14,Soap,16
+2024-01-14,Soft Drink,21
+2024-01-14,Yogurt,17
+2024-01-15,Biscuits,15
+2024-01-15,Bread,23
+2024-01-15,Butter,11
+2024-01-15,Chips,19
+2024-01-15,Chocolate,21
+2024-01-15,Cooking Oil,18
+2024-01-15,Milk,34
+2024-01-15,Rice,10
+2024-01-15,Shampoo,20
+2024-01-15,Soap,22
+2024-01-15,Soft Drink,20
+2024-01-15,Yogurt,30
+2024-01-16,Biscuits,7
+2024-01-16,Bread,24
+2024-01-16,Butter,26
+2024-01-16,Chips,18
+2024-01-16,Chocolate,27
+2024-01-16,Cooking Oil,10
+2024-01-16,Milk,21
+2024-01-16,Rice,25
+2024-01-16,Shampoo,25
+2024-01-16,Soap,18
+2024-01-16,Soft Drink,27
+2024-01-16,Yogurt,20
+2024-01-17,Biscuits,16
+2024-01-17,Bread,15
+2024-01-17,Butter,17
+2024-01-17,Chips,31
+2024-01-17,Chocolate,16
+2024-01-17,Cooking Oil,4
+2024-01-17,Milk,12
+2024-01-17,Rice,11
+2024-01-17,Shampoo,8
+2024-01-17,Soap,27
+2024-01-17,Soft Drink,7
+2024-01-17,Yogurt,15
+2024-01-18,Biscuits,10
+2024-01-18,Bread,14
+2024-01-18,Butter,25
+2024-01-18,Chips,17
+2024-01-18,Chocolate,10
+2024-01-18,Cooking Oil,19
+2024-01-18,Milk,25
+2024-01-18,Rice,14
+2024-01-18,Shampoo,13
+2024-01-18,Soap,14
+2024-01-18,Soft Drink,30
+2024-01-18,Yogurt,31
+2024-01-19,Biscuits,21
+2024-01-19,Bread,12
+2024-01-19,Butter,25
+2024-01-19,Chips,13
+2024-01-19,Chocolate,19
+2024-01-19,Cooking Oil,5
+2024-01-19,Milk,15
+2024-01-19,Rice,6
+2024-01-19,Shampoo,24
+2024-01-19,Soap,6
+2024-01-19,Soft Drink,37
+2024-01-19,Yogurt,1
+2024-01-20,Biscuits,12
+2024-01-20,Bread,17
+2024-01-20,Butter,17
+2024-01-20,Chips,13
+2024-01-20,Chocolate,18
+2024-01-20,Cooking Oil,32
+2024-01-20,Milk,6
+2024-01-20,Rice,14
+2024-01-20,Shampoo,17
+2024-01-20,Soap,9
+2024-01-20,Soft Drink,7
+2024-01-20,Yogurt,7
+2024-01-21,Biscuits,9
+2024-01-21,Bread,15
+2024-01-21,Butter,20
+2024-01-21,Chips,23
+2024-01-21,Chocolate,14
+2024-01-21,Cooking Oil,6
+2024-01-21,Milk,39
+2024-01-21,Rice,9
+2024-01-21,Shampoo,19
+2024-01-21,Soap,17
+2024-01-21,Soft Drink,21
+2024-01-21,Yogurt,20
+2024-01-22,Biscuits,6
+2024-01-22,Bread,9
+2024-01-22,Butter,38
+2024-01-22,Chips,36
+2024-01-22,Chocolate,23
+2024-01-22,Cooking Oil,13
+2024-01-22,Milk,2
+2024-01-22,Rice,15
+2024-01-22,Shampoo,38
+2024-01-22,Soap,23
+2024-01-22,Soft Drink,19
+2024-01-22,Yogurt,19
+2024-01-23,Biscuits,17
+2024-01-23,Bread,4
+2024-01-23,Butter,15
+2024-01-23,Chips,33
+2024-01-23,Chocolate,28
+2024-01-23,Cooking Oil,16
+2024-01-23,Milk,8
+2024-01-23,Rice,14
+2024-01-23,Shampoo,34
+2024-01-23,Soap,10
+2024-01-23,Soft Drink,29
+2024-01-23,Yogurt,10
+2024-01-24,Biscuits,27
+2024-01-24,Bread,24
+2024-01-24,Butter,15
+2024-01-24,Chips,36
+2024-01-24,Chocolate,30
+2024-01-24,Cooking Oil,5
+2024-01-24,Milk,13
+2024-01-24,Rice,2
+2024-01-24,Shampoo,7
+2024-01-24,Soap,13
+2024-01-24,Soft Drink,30
+2024-01-24,Yogurt,15
+2024-01-25,Biscuits,24
+2024-01-25,Bread,15
+2024-01-25,Butter,2
+2024-01-25,Chips,12
+2024-01-25,Chocolate,13
+2024-01-25,Cooking Oil,20
+2024-01-25,Milk,13
+2024-01-25,Rice,20
+2024-01-25,Shampoo,12
+2024-01-25,Soap,14
+2024-01-25,Soft Drink,22
+2024-01-25,Yogurt,19
+2024-01-26,Biscuits,21
+2024-01-26,Bread,12
+2024-01-26,Butter,18
+2024-01-26,Chips,30
+2024-01-26,Chocolate,8
+2024-01-26,Cooking Oil,10
+2024-01-26,Milk,7
+2024-01-26,Rice,15
+2024-01-26,Shampoo,13
+2024-01-26,Soap,21
+2024-01-26,Soft Drink,18
+2024-01-26,Yogurt,17
+2024-01-27,Biscuits,9
+2024-01-27,Bread,38
+2024-01-27,Butter,22
+2024-01-27,Chips,18
+2024-01-27,Chocolate,30
+2024-01-27,Cooking Oil,14
+2024-01-27,Milk,26
+2024-01-27,Rice,11
+2024-01-27,Shampoo,15
+2024-01-27,Soap,18
+2024-01-27,Soft Drink,21
+2024-01-27,Yogurt,29
+2024-01-28,Biscuits,17
+2024-01-28,Bread,30
+2024-01-28,Butter,11
+2024-01-28,Chips,17
+2024-01-28,Chocolate,14
+2024-01-28,Cooking Oil,19
+2024-01-28,Milk,11
+2024-01-28,Rice,10
+2024-01-28,Shampoo,29
+2024-01-28,Soap,9
+2024-01-28,Soft Drink,14
+2024-01-28,Yogurt,24
+2024-01-29,Biscuits,20
+2024-01-29,Bread,10
+2024-01-29,Butter,23
+2024-01-29,Chips,11
+2024-01-29,Chocolate,16
+2024-01-29,Cooking Oil,33
+2024-01-29,Milk,28
+2024-01-29,Rice,12
+2024-01-29,Shampoo,20
+2024-01-29,Soap,25
+2024-01-29,Soft Drink,30
+2024-01-29,Yogurt,3
+2024-01-30,Biscuits,5
+2024-01-30,Bread,18
+2024-01-30,Butter,32
+2024-01-30,Chips,14
+2024-01-30,Chocolate,7
+2024-01-30,Cooking Oil,24
+2024-01-30,Milk,17
+2024-01-30,Rice,13
+2024-01-30,Shampoo,20
+2024-01-30,Soap,21
+2024-01-30,Soft Drink,13
+2024-01-30,Yogurt,16
+2024-01-31,Biscuits,16
+2024-01-31,Bread,30
+2024-01-31,Butter,22
+2024-01-31,Chips,17
+2024-01-31,Chocolate,20
+2024-01-31,Cooking Oil,9
+2024-01-31,Milk,34
+2024-01-31,Rice,21
+2024-01-31,Shampoo,13
+2024-01-31,Soap,25
+2024-01-31,Soft Drink,21
+2024-01-31,Yogurt,13
+2024-02-01,Biscuits,10
+2024-02-01,Bread,9
+2024-02-01,Butter,11
+2024-02-01,Chips,12
+2024-02-01,Chocolate,22
+2024-02-01,Cooking Oil,26
+2024-02-01,Milk,14
+2024-02-01,Rice,26
+2024-02-01,Shampoo,11
+2024-02-01,Soap,15
+2024-02-01,Soft Drink,11
+2024-02-01,Yogurt,9
+2024-02-02,Biscuits,9
+2024-02-02,Bread,16
+2024-02-02,Butter,22
+2024-02-02,Chips,26
+2024-02-02,Chocolate,22
+2024-02-02,Cooking Oil,20
+2024-02-02,Milk,19
+2024-02-02,Rice,11
+2024-02-02,Shampoo,21
+2024-02-02,Soap,18
+2024-02-02,Soft Drink,23
+2024-02-02,Yogurt,11
+2024-02-03,Biscuits,13
+2024-02-03,Bread,19
+2024-02-03,Butter,14
+2024-02-03,Chips,23
+2024-02-03,Chocolate,20
+2024-02-03,Cooking Oil,21
+2024-02-03,Milk,28
+2024-02-03,Rice,19
+2024-02-03,Shampoo,15
+2024-02-03,Soap,10
+2024-02-03,Soft Drink,22
+2024-02-03,Yogurt,23
+2024-02-04,Biscuits,8
+2024-02-04,Bread,19
+2024-02-04,Butter,32
+2024-02-04,Chips,19
+2024-02-04,Chocolate,20
+2024-02-04,Cooking Oil,12
+2024-02-04,Milk,18
+2024-02-04,Rice,7
+2024-02-04,Shampoo,2
+2024-02-04,Soap,26
+2024-02-04,Soft Drink,24
+2024-02-04,Yogurt,36
+2024-02-05,Biscuits,23
+2024-02-05,Bread,29
+2024-02-05,Butter,15
+2024-02-05,Chips,8
+2024-02-05,Chocolate,6
+2024-02-05,Milk,17
+2024-02-05,Rice,17
+2024-02-05,Shampoo,19
+2024-02-05,Soap,20
+2024-02-05,Soft Drink,7
+2024-02-05,Yogurt,13
+2024-02-06,Biscuits,20
+2024-02-06,Bread,9
+2024-02-06,Butter,17
+2024-02-06,Chips,21
+2024-02-06,Chocolate,10
+2024-02-06,Cooking Oil,14
+2024-02-06,Milk,19
+2024-02-06,Rice,19
+2024-02-06,Shampoo,27
+2024-02-06,Soap,34
+2024-02-06,Soft Drink,21
+2024-02-06,Yogurt,17
+2024-02-07,Biscuits,23
+2024-02-07,Bread,22
+2024-02-07,Butter,15
+2024-02-07,Chips,10
+2024-02-07,Chocolate,24
+2024-02-07,Cooking Oil,13
+2024-02-07,Milk,16
+2024-02-07,Rice,12
+2024-02-07,Shampoo,22
+2024-02-07,Soap,13
+2024-02-07,Soft Drink,10
+2024-02-07,Yogurt,23
+2024-02-08,Biscuits,18
+2024-02-08,Bread,25
+2024-02-08,Butter,14
+2024-02-08,Chips,13
+2024-02-08,Chocolate,35
+2024-02-08,Cooking Oil,15
+2024-02-08,Milk,14
+2024-02-08,Rice,7
+2024-02-08,Shampoo,17
+2024-02-08,Soap,20
+2024-02-08,Soft Drink,15
+2024-02-08,Yogurt,15
+2024-02-09,Biscuits,17
+2024-02-09,Bread,11
+2024-02-09,Butter,25
+2024-02-09,Chips,12
+2024-02-09,Chocolate,25
+2024-02-09,Cooking Oil,29
+2024-02-09,Milk,27
+2024-02-09,Rice,16
+2024-02-09,Shampoo,13
+2024-02-09,Soap,25
+2024-02-09,Soft Drink,22
+2024-02-09,Yogurt,5
+2024-02-10,Biscuits,24
+2024-02-10,Bread,19
+2024-02-10,Butter,27
+2024-02-10,Chips,25
+2024-02-10,Chocolate,21
+2024-02-10,Cooking Oil,13
+2024-02-10,Milk,15
+2024-02-10,Rice,26
+2024-02-10,Shampoo,20
+2024-02-10,Soap,19
+2024-02-10,Soft Drink,33
+2024-02-10,Yogurt,18
+2024-02-11,Biscuits,21
+2024-02-11,Bread,22
+2024-02-11,Butter,13
+2024-02-11,Chips,11
+2024-02-11,Chocolate,10
+2024-02-11,Cooking Oil,11
+2024-02-11,Milk,15
+2024-02-11,Rice,14
+2024-02-11,Shampoo,15
+2024-02-11,Soap,26
+2024-02-11,Soft Drink,22
+2024-02-11,Yogurt,27
+2024-02-12,Biscuits,26
+2024-02-12,Bread,18
+2024-02-12,Butter,6
+2024-02-12,Chips,12
+2024-02-12,Chocolate,26
+2024-02-12,Cooking Oil,24
+2024-02-12,Milk,10
+2024-02-12,Rice,22
+2024-02-12,Shampoo,26
+2024-02-12,Soap,1
+2024-02-12,Soft Drink,10
+2024-02-12,Yogurt,21
+2024-02-13,Biscuits,18
+2024-02-13,Bread,18
+2024-02-13,Butter,27
+2024-02-13,Chips,15
+2024-02-13,Chocolate,18
+2024-02-13,Cooking Oil,19
+2024-02-13,Milk,6
+2024-02-13,Rice,19
+2024-02-13,Shampoo,14
+2024-02-13,Soap,28
+2024-02-13,Soft Drink,24
+2024-02-13,Yogurt,28
+2024-02-14,Biscuits,9
+2024-02-14,Bread,17
+2024-02-14,Butter,13
+2024-02-14,Chips,12
+2024-02-14,Chocolate,19
+2024-02-14,Cooking Oil,31
+2024-02-14,Milk,10
+2024-02-14,Rice,15
+2024-02-14,Shampoo,18
+2024-02-14,Soap,8
+2024-02-14,Soft Drink,18
+2024-02-14,Yogurt,11
+2024-02-15,Biscuits,17
+2024-02-15,Bread,18
+2024-02-15,Butter,10
+2024-02-15,Chips,11
+2024-02-15,Chocolate,14
+2024-02-15,Cooking Oil,10
+2024-02-15,Milk,9
+2024-02-15,Rice,5
+2024-02-15,Shampoo,14
+2024-02-15,Soap,21
+2024-02-15,Soft Drink,10
+2024-02-15,Yogurt,19
+2024-02-16,Biscuits,9
+2024-02-16,Bread,10
+2024-02-16,Butter,20
+2024-02-16,Chips,30
+2024-02-16,Chocolate,7
+2024-02-16,Cooking Oil,20
+2024-02-16,Milk,20
+2024-02-16,Rice,21
+2024-02-16,Shampoo,4
+2024-02-16,Soap,13
+2024-02-16,Soft Drink,13
+2024-02-16,Yogurt,9
+2024-02-17,Biscuits,11
+2024-02-17,Bread,17
+2024-02-17,Butter,32
+2024-02-17,Chips,15
+2024-02-17,Chocolate,12
+2024-02-17,Cooking Oil,16
+2024-02-17,Milk,19
+2024-02-17,Rice,19
+2024-02-17,Shampoo,16
+2024-02-17,Soap,24
+2024-02-17,Soft Drink,21
+2024-02-17,Yogurt,31
+2024-02-18,Biscuits,13
+2024-02-18,Bread,25
+2024-02-18,Butter,13
+2024-02-18,Chips,17
+2024-02-18,Chocolate,31
+2024-02-18,Cooking Oil,15
+2024-02-18,Milk,16
+2024-02-18,Rice,4
+2024-02-18,Shampoo,19
+2024-02-18,Soap,9
+2024-02-18,Soft Drink,17
+2024-02-18,Yogurt,19
+2024-02-19,Biscuits,13
+2024-02-19,Bread,16
+2024-02-19,Butter,16
+2024-02-19,Chips,22
+2024-02-19,Chocolate,8
+2024-02-19,Cooking Oil,7
+2024-02-19,Milk,16
+2024-02-19,Rice,15
+2024-02-19,Shampoo,16
+2024-02-19,Soap,12
+2024-02-19,Soft Drink,34
+2024-02-19,Yogurt,19
+2024-02-20,Biscuits,7
+2024-02-20,Bread,31
+2024-02-20,Butter,23
+2024-02-20,Chips,6
+2024-02-20,Chocolate,15
+2024-02-20,Cooking Oil,19
+2024-02-20,Milk,21
+2024-02-20,Rice,13
+2024-02-20,Shampoo,18
+2024-02-20,Soap,21
+2024-02-20,Soft Drink,7
+2024-02-20,Yogurt,11
+2024-02-21,Biscuits,42
+2024-02-21,Bread,23
+2024-02-21,Butter,31
+2024-02-21,Chips,16
+2024-02-21,Chocolate,20
+2024-02-21,Cooking Oil,14
+2024-02-21,Milk,16
+2024-02-21,Rice,24
+2024-02-21,Shampoo,24
+2024-02-21,Soap,26
+2024-02-21,Soft Drink,14
+2024-02-21,Yogurt,28
+2024-02-22,Biscuits,17
+2024-02-22,Bread,24
+2024-02-22,Butter,22
+2024-02-22,Chips,19
+2024-02-22,Chocolate,18
+2024-02-22,Cooking Oil,16
+2024-02-22,Milk,15
+2024-02-22,Rice,22
+2024-02-22,Shampoo,15
+2024-02-22,Soap,9
+2024-02-22,Soft Drink,5
+2024-02-22,Yogurt,11
+2024-02-23,Biscuits,31
+2024-02-23,Bread,20
+2024-02-23,Butter,21
+2024-02-23,Chips,24
+2024-02-23,Chocolate,11
+2024-02-23,Cooking Oil,17
+2024-02-23,Milk,17
+2024-02-23,Rice,12
+2024-02-23,Shampoo,14
+2024-02-23,Soap,19
+2024-02-23,Soft Drink,22
+2024-02-23,Yogurt,32
+2024-02-24,Biscuits,13
+2024-02-24,Bread,3
+2024-02-24,Butter,6
+2024-02-24,Chips,23
+2024-02-24,Chocolate,6
+2024-02-24,Cooking Oil,23
+2024-02-24,Milk,15
+2024-02-24,Rice,9
+2024-02-24,Shampoo,44
+2024-02-24,Soap,29
+2024-02-24,Soft Drink,28
+2024-02-24,Yogurt,9
+2024-02-25,Biscuits,26
+2024-02-25,Bread,22
+2024-02-25,Butter,3
+2024-02-25,Chips,24
+2024-02-25,Chocolate,9
+2024-02-25,Cooking Oil,9
+2024-02-25,Milk,17
+2024-02-25,Rice,16
+2024-02-25,Shampoo,13
+2024-02-25,Soap,12
+2024-02-25,Soft Drink,13
+2024-02-25,Yogurt,15
+2024-02-26,Biscuits,15
+2024-02-26,Bread,14
+2024-02-26,Butter,24
+2024-02-26,Chips,23
+2024-02-26,Chocolate,20
+2024-02-26,Cooking Oil,7
+2024-02-26,Milk,9
+2024-02-26,Rice,16
+2024-02-26,Shampoo,9
+2024-02-26,Soap,14
+2024-02-26,Soft Drink,19
+2024-02-26,Yogurt,22
+2024-02-27,Biscuits,17
+2024-02-27,Bread,18
+2024-02-27,Butter,7
+2024-02-27,Chips,28
+2024-02-27,Chocolate,20
+2024-02-27,Cooking Oil,2
+2024-02-27,Milk,18
+2024-02-27,Rice,29
+2024-02-27,Shampoo,15
+2024-02-27,Soap,21
+2024-02-27,Soft Drink,33
+2024-02-27,Yogurt,20
+2024-02-28,Biscuits,19
+2024-02-28,Bread,19
+2024-02-28,Butter,12
+2024-02-28,Chips,21
+2024-02-28,Chocolate,18
+2024-02-28,Cooking Oil,1
+2024-02-28,Milk,19
+2024-02-28,Rice,1
+2024-02-28,Shampoo,15
+2024-02-28,Soap,12
+2024-02-28,Soft Drink,38
+2024-02-28,Yogurt,23
+2024-02-29,Biscuits,18
+2024-02-29,Bread,27
+2024-02-29,Butter,21
+2024-02-29,Chips,27
+2024-02-29,Chocolate,32
+2024-02-29,Cooking Oil,10
+2024-02-29,Milk,22
+2024-02-29,Rice,27
+2024-02-29,Shampoo,16
+2024-02-29,Soap,17
+2024-02-29,Soft Drink,10
+2024-02-29,Yogurt,25
+2024-03-01,Biscuits,19
+2024-03-01,Bread,20
+2024-03-01,Butter,10
+2024-03-01,Chips,27
+2024-03-01,Chocolate,27
+2024-03-01,Cooking Oil,18
+2024-03-01,Milk,10
+2024-03-01,Rice,7
+2024-03-01,Shampoo,14
+2024-03-01,Soap,16
+2024-03-01,Soft Drink,15
+2024-03-01,Yogurt,1
+2024-03-02,Biscuits,26
+2024-03-02,Bread,22
+2024-03-02,Butter,24
+2024-03-02,Chips,20
+2024-03-02,Chocolate,21
+2024-03-02,Cooking Oil,19
+2024-03-02,Milk,23
+2024-03-02,Rice,18
+2024-03-02,Shampoo,19
+2024-03-02,Soap,15
+2024-03-02,Soft Drink,25
+2024-03-02,Yogurt,19
+2024-03-03,Biscuits,19
+2024-03-03,Bread,7
+2024-03-03,Butter,11
+2024-03-03,Chips,13
+2024-03-03,Chocolate,26
+2024-03-03,Cooking Oil,5
+2024-03-03,Milk,26
+2024-03-03,Rice,8
+2024-03-03,Shampoo,21
+2024-03-03,Soap,14
+2024-03-03,Soft Drink,14
+2024-03-03,Yogurt,36
+2024-03-04,Biscuits,17
+2024-03-04,Bread,13
+2024-03-04,Butter,11
+2024-03-04,Chips,18
+2024-03-04,Chocolate,22
+2024-03-04,Cooking Oil,2
+2024-03-04,Milk,22
+2024-03-04,Rice,25
+2024-03-04,Shampoo,10
+2024-03-04,Soap,16
+2024-03-04,Soft Drink,14
+2024-03-04,Yogurt,20
+2024-03-05,Biscuits,16
+2024-03-05,Bread,40
+2024-03-05,Butter,12
+2024-03-05,Chips,17
+2024-03-05,Chocolate,9
+2024-03-05,Cooking Oil,6
+2024-03-05,Milk,11
+2024-03-05,Rice,14
+2024-03-05,Shampoo,15
+2024-03-05,Soap,20
+2024-03-05,Soft Drink,12
+2024-03-05,Yogurt,15
+2024-03-06,Biscuits,12
+2024-03-06,Bread,18
+2024-03-06,Butter,32
+2024-03-06,Chips,12
+2024-03-06,Chocolate,14
+2024-03-06,Cooking Oil,20
+2024-03-06,Milk,2
+2024-03-06,Rice,9
+2024-03-06,Shampoo,10
+2024-03-06,Soap,30
+2024-03-06,Soft Drink,10
+2024-03-06,Yogurt,15
+2024-03-07,Biscuits,24
+2024-03-07,Bread,18
+2024-03-07,Butter,24
+2024-03-07,Chips,23
+2024-03-07,Chocolate,7
+2024-03-07,Cooking Oil,8
+2024-03-07,Milk,7
+2024-03-07,Rice,20
+2024-03-07,Shampoo,34
+2024-03-07,Soap,6
+2024-03-07,Soft Drink,12
+2024-03-07,Yogurt,20
+2024-03-08,Biscuits,13
+2024-03-08,Bread,12
+2024-03-08,Butter,8
+2024-03-08,Chips,5
+2024-03-08,Chocolate,14
+2024-03-08,Cooking Oil,16
+2024-03-08,Milk,12
+2024-03-08,Rice,14
+2024-03-08,Shampoo,23
+2024-03-08,Soap,16
+2024-03-08,Soft Drink,26
+2024-03-08,Yogurt,23
+2024-03-09,Biscuits,11
+2024-03-09,Bread,27
+2024-03-09,Butter,14
+2024-03-09,Chips,7
+2024-03-09,Chocolate,7
+2024-03-09,Cooking Oil,14
+2024-03-09,Milk,12
+2024-03-09,Rice,6
+2024-03-09,Shampoo,12
+2024-03-09,Soap,18
+2024-03-09,Soft Drink,24
+2024-03-09,Yogurt,22
+2024-03-10,Biscuits,18
+2024-03-10,Bread,3
+2024-03-10,Butter,15
+2024-03-10,Chips,9
+2024-03-10,Chocolate,20
+2024-03-10,Cooking Oil,16
+2024-03-10,Milk,15
+2024-03-10,Rice,31
+2024-03-10,Shampoo,23
+2024-03-10,Soap,15
+2024-03-10,Soft Drink,3
+2024-03-10,Yogurt,15
+2024-03-11,Biscuits,33
+2024-03-11,Bread,22
+2024-03-11,Butter,16
+2024-03-11,Chips,15
+2024-03-11,Chocolate,27
+2024-03-11,Cooking Oil,28
+2024-03-11,Milk,30
+2024-03-11,Rice,5
+2024-03-11,Shampoo,17
+2024-03-11,Soap,26
+2024-03-11,Soft Drink,12
+2024-03-11,Yogurt,28
+2024-03-12,Biscuits,12
+2024-03-12,Bread,22
+2024-03-12,Butter,26
+2024-03-12,Chips,14
+2024-03-12,Chocolate,12
+2024-03-12,Cooking Oil,25
+2024-03-12,Milk,16
+2024-03-12,Rice,14
+2024-03-12,Shampoo,22
+2024-03-12,Soap,15
+2024-03-12,Soft Drink,22
+2024-03-12,Yogurt,24
+2024-03-13,Biscuits,6
+2024-03-13,Bread,24
+2024-03-13,Butter,24
+2024-03-13,Chips,11
+2024-03-13,Chocolate,13
+2024-03-13,Cooking Oil,19
+2024-03-13,Milk,29
+2024-03-13,Rice,32
+2024-03-13,Shampoo,19
+2024-03-13,Soap,21
+2024-03-13,Soft Drink,9
+2024-03-13,Yogurt,26
+2024-03-14,Biscuits,26
+2024-03-14,Bread,25
+2024-03-14,Butter,22
+2024-03-14,Chips,21
+2024-03-14,Chocolate,36
+2024-03-14,Cooking Oil,34
+2024-03-14,Milk,3
+2024-03-14,Rice,12
+2024-03-14,Shampoo,18
+2024-03-14,Soap,17
+2024-03-14,Soft Drink,30
+2024-03-14,Yogurt,14
+2024-03-15,Biscuits,30
+2024-03-15,Bread,26
+2024-03-15,Butter,12
+2024-03-15,Chips,18
+2024-03-15,Chocolate,12
+2024-03-15,Cooking Oil,23
+2024-03-15,Milk,8
+2024-03-15,Rice,6
+2024-03-15,Shampoo,17
+2024-03-15,Soap,13
+2024-03-15,Soft Drink,19
+2024-03-15,Yogurt,6
+2024-03-16,Biscuits,19
+2024-03-16,Bread,12
+2024-03-16,Butter,16
+2024-03-16,Chips,53
+2024-03-16,Chocolate,9
+2024-03-16,Cooking Oil,11
+2024-03-16,Milk,10
+2024-03-16,Rice,12
+2024-03-16,Shampoo,18
+2024-03-16,Soap,22
+2024-03-16,Soft Drink,13
+2024-03-16,Yogurt,15
+2024-03-17,Biscuits,14
+2024-03-17,Bread,6
+2024-03-17,Butter,20
+2024-03-17,Chips,20
+2024-03-17,Chocolate,17
+2024-03-17,Cooking Oil,14
+2024-03-17,Milk,22
+2024-03-17,Rice,11
+2024-03-17,Shampoo,15
+2024-03-17,Soap,14
+2024-03-17,Soft Drink,16
+2024-03-17,Yogurt,8
+2024-03-18,Biscuits,22
+2024-03-18,Bread,13
+2024-03-18,Butter,15
+2024-03-18,Chips,13
+2024-03-18,Chocolate,8
+2024-03-18,Cooking Oil,24
+2024-03-18,Milk,12
+2024-03-18,Rice,14
+2024-03-18,Shampoo,10
+2024-03-18,Soap,7
+2024-03-18,Soft Drink,12
+2024-03-18,Yogurt,25
+2024-03-19,Biscuits,21
+2024-03-19,Bread,17
+2024-03-19,Butter,14
+2024-03-19,Chips,16
+2024-03-19,Chocolate,23
+2024-03-19,Cooking Oil,7
+2024-03-19,Milk,10
+2024-03-19,Rice,25
+2024-03-19,Shampoo,16
+2024-03-19,Soap,23
+2024-03-19,Soft Drink,21
+2024-03-19,Yogurt,14
+2024-03-20,Biscuits,19
+2024-03-20,Bread,12
+2024-03-20,Butter,19
+2024-03-20,Chips,21
+2024-03-20,Chocolate,19
+2024-03-20,Cooking Oil,15
+2024-03-20,Milk,23
+2024-03-20,Rice,16
+2024-03-20,Shampoo,7
+2024-03-20,Soap,25
+2024-03-20,Soft Drink,10
+2024-03-20,Yogurt,24
+2024-03-21,Biscuits,36
+2024-03-21,Bread,19
+2024-03-21,Butter,26
+2024-03-21,Chips,14
+2024-03-21,Chocolate,9
+2024-03-21,Cooking Oil,28
+2024-03-21,Milk,27
+2024-03-21,Rice,14
+2024-03-21,Shampoo,13
+2024-03-21,Soap,18
+2024-03-21,Soft Drink,10
+2024-03-21,Yogurt,14
+2024-03-22,Biscuits,8
+2024-03-22,Bread,13
+2024-03-22,Butter,21
+2024-03-22,Chips,13
+2024-03-22,Chocolate,19
+2024-03-22,Cooking Oil,37
+2024-03-22,Milk,27
+2024-03-22,Rice,30
+2024-03-22,Shampoo,16
+2024-03-22,Soap,20
+2024-03-22,Soft Drink,16
+2024-03-22,Yogurt,27
+2024-03-23,Biscuits,24
+2024-03-23,Bread,23
+2024-03-23,Butter,14
+2024-03-23,Chips,20
+2024-03-23,Chocolate,11
+2024-03-23,Cooking Oil,15
+2024-03-23,Milk,8
+2024-03-23,Rice,28
+2024-03-23,Shampoo,30
+2024-03-23,Soap,15
+2024-03-23,Soft Drink,12
+2024-03-23,Yogurt,12
+2024-03-24,Biscuits,26
+2024-03-24,Bread,19
+2024-03-24,Butter,18
+2024-03-24,Chips,27
+2024-03-24,Chocolate,14
+2024-03-24,Cooking Oil,22
+2024-03-24,Milk,25
+2024-03-24,Rice,19
+2024-03-24,Shampoo,21
+2024-03-24,Soap,16
+2024-03-24,Soft Drink,17
+2024-03-24,Yogurt,13
+2024-03-25,Biscuits,20
+2024-03-25,Bread,19
+2024-03-25,Butter,16
+2024-03-25,Chips,13
+2024-03-25,Chocolate,13
+2024-03-25,Cooking Oil,18
+2024-03-25,Milk,13
+2024-03-25,Rice,8
+2024-03-25,Shampoo,19
+2024-03-25,Soap,15
+2024-03-25,Soft Drink,6
+2024-03-25,Yogurt,27
+2024-03-26,Biscuits,13
+2024-03-26,Bread,13
+2024-03-26,Butter,11
+2024-03-26,Chips,16
+2024-03-26,Chocolate,4
+2024-03-26,Cooking Oil,26
+2024-03-26,Milk,15
+2024-03-26,Rice,34
+2024-03-26,Shampoo,15
+2024-03-26,Soap,9
+2024-03-26,Soft Drink,3
+2024-03-26,Yogurt,8
+2024-03-27,Biscuits,18
+2024-03-27,Bread,8
+2024-03-27,Butter,9
+2024-03-27,Chips,10
+2024-03-27,Chocolate,10
+2024-03-27,Cooking Oil,15
+2024-03-27,Milk,16
+2024-03-27,Rice,28
+2024-03-27,Shampoo,10
+2024-03-27,Soap,11
+2024-03-27,Soft Drink,26
+2024-03-27,Yogurt,21
+2024-03-28,Biscuits,12
+2024-03-28,Bread,32
+2024-03-28,Butter,13
+2024-03-28,Chips,26
+2024-03-28,Chocolate,13
+2024-03-28,Cooking Oil,27
+2024-03-28,Milk,15
+2024-03-28,Rice,26
+2024-03-28,Shampoo,11
+2024-03-28,Soap,10
+2024-03-28,Soft Drink,20
+2024-03-28,Yogurt,17
+2024-03-29,Biscuits,13
+2024-03-29,Bread,22
+2024-03-29,Butter,15
+2024-03-29,Chips,13
+2024-03-29,Chocolate,6
+2024-03-29,Cooking Oil,11
+2024-03-29,Milk,20
+2024-03-29,Rice,30
+2024-03-29,Shampoo,18
+2024-03-29,Soap,12
+2024-03-29,Soft Drink,8
+2024-03-29,Yogurt,12
+2024-03-30,Biscuits,13
+2024-03-30,Bread,26
+2024-03-30,Butter,20
+2024-03-30,Chips,19
+2024-03-30,Chocolate,27
+2024-03-30,Cooking Oil,20
+2024-03-30,Milk,13
+2024-03-30,Rice,6
+2024-03-30,Shampoo,3
+2024-03-30,Soap,14
+2024-03-30,Soft Drink,10
+2024-03-30,Yogurt,14
+2024-03-31,Biscuits,9
+2024-03-31,Bread,15
+2024-03-31,Butter,9
+2024-03-31,Chips,10
+2024-03-31,Chocolate,17
+2024-03-31,Cooking Oil,18
+2024-03-31,Milk,28
+2024-03-31,Rice,29
+2024-03-31,Shampoo,24
+2024-03-31,Soap,18
+2024-03-31,Soft Drink,12
+2024-03-31,Yogurt,20
+2024-04-01,Biscuits,21
+2024-04-01,Bread,11
+2024-04-01,Butter,14
+2024-04-01,Chips,26
+2024-04-01,Chocolate,15
+2024-04-01,Cooking Oil,13
+2024-04-01,Milk,23
+2024-04-01,Rice,12
+2024-04-01,Shampoo,20
+2024-04-01,Soap,10
+2024-04-01,Soft Drink,31
+2024-04-01,Yogurt,16
+2024-04-02,Biscuits,24
+2024-04-02,Bread,27
+2024-04-02,Butter,31
+2024-04-02,Chips,21
+2024-04-02,Chocolate,30
+2024-04-02,Cooking Oil,9
+2024-04-02,Milk,25
+2024-04-02,Rice,12
+2024-04-02,Shampoo,12
+2024-04-02,Soap,19
+2024-04-02,Soft Drink,13
+2024-04-02,Yogurt,30
+2024-04-03,Biscuits,24
+2024-04-03,Bread,10
+2024-04-03,Butter,18
+2024-04-03,Chips,25
+2024-04-03,Chocolate,13
+2024-04-03,Cooking Oil,6
+2024-04-03,Milk,23
+2024-04-03,Rice,17
+2024-04-03,Shampoo,21
+2024-04-03,Soap,11
+2024-04-03,Soft Drink,7
+2024-04-03,Yogurt,34
+2024-04-04,Biscuits,24
+2024-04-04,Bread,17
+2024-04-04,Butter,18
+2024-04-04,Chips,13
+2024-04-04,Chocolate,24
+2024-04-04,Cooking Oil,19
+2024-04-04,Milk,12
+2024-04-04,Rice,20
+2024-04-04,Shampoo,25
+2024-04-04,Soap,25
+2024-04-04,Soft Drink,22
+2024-04-04,Yogurt,7
+2024-04-05,Biscuits,10
+2024-04-05,Bread,22
+2024-04-05,Butter,19
+2024-04-05,Chips,10
+2024-04-05,Chocolate,19
+2024-04-05,Cooking Oil,23
+2024-04-05,Milk,19
+2024-04-05,Rice,21
+2024-04-05,Shampoo,31
+2024-04-05,Soap,20
+2024-04-05,Soft Drink,14
+2024-04-05,Yogurt,7
+2024-04-06,Biscuits,28
+2024-04-06,Bread,11
+2024-04-06,Butter,15
+2024-04-06,Chips,11
+2024-04-06,Chocolate,9
+2024-04-06,Cooking Oil,29
+2024-04-06,Milk,15
+2024-04-06,Rice,9
+2024-04-06,Shampoo,15
+2024-04-06,Soap,15
+2024-04-06,Soft Drink,14
+2024-04-06,Yogurt,8
+2024-04-07,Biscuits,18
+2024-04-07,Bread,12
+2024-04-07,Butter,27
+2024-04-07,Chips,10
+2024-04-07,Chocolate,19
+2024-04-07,Cooking Oil,28
+2024-04-07,Milk,15
+2024-04-07,Rice,18
+2024-04-07,Shampoo,5
+2024-04-07,Soap,23
+2024-04-07,Soft Drink,15
+2024-04-07,Yogurt,13
+2024-04-08,Biscuits,15
+2024-04-08,Bread,4
+2024-04-08,Butter,17
+2024-04-08,Chips,20
+2024-04-08,Chocolate,16
+2024-04-08,Cooking Oil,14
+2024-04-08,Milk,15
+2024-04-08,Rice,23
+2024-04-08,Shampoo,22
+2024-04-08,Soap,27
+2024-04-08,Soft Drink,10
+2024-04-08,Yogurt,14
+2024-04-09,Biscuits,32
+2024-04-09,Bread,7
+2024-04-09,Butter,28
+2024-04-09,Chips,19
+2024-04-09,Chocolate,13
+2024-04-09,Cooking Oil,18
+2024-04-09,Milk,3
+2024-04-09,Rice,10
+2024-04-09,Shampoo,11
+2024-04-09,Soap,13
+2024-04-09,Soft Drink,13
+2024-04-09,Yogurt,13
+2024-04-10,Biscuits,14
+2024-04-10,Bread,15
+2024-04-10,Butter,11
+2024-04-10,Chips,12
+2024-04-10,Chocolate,20
+2024-04-10,Cooking Oil,28
+2024-04-10,Milk,12
+2024-04-10,Rice,28
+2024-04-10,Shampoo,15
+2024-04-10,Soap,16
+2024-04-10,Soft Drink,30
+2024-04-10,Yogurt,14
+2024-04-11,Biscuits,13
+2024-04-11,Bread,27
+2024-04-11,Butter,20
+2024-04-11,Chips,9
+2024-04-11,Chocolate,17
+2024-04-11,Cooking Oil,14
+2024-04-11,Rice,15
+2024-04-11,Shampoo,15
+2024-04-11,Soap,31
+2024-04-11,Soft Drink,15
+2024-04-11,Yogurt,4
+2024-04-12,Biscuits,8
+2024-04-12,Bread,19
+2024-04-12,Butter,14
+2024-04-12,Chips,26
+2024-04-12,Chocolate,14
+2024-04-12,Cooking Oil,31
+2024-04-12,Milk,36
+2024-04-12,Rice,21
+2024-04-12,Shampoo,34
+2024-04-12,Soap,27
+2024-04-12,Soft Drink,25
+2024-04-12,Yogurt,27
+2024-04-13,Biscuits,18
+2024-04-13,Bread,9
+2024-04-13,Butter,27
+2024-04-13,Chips,14
+2024-04-13,Chocolate,9
+2024-04-13,Cooking Oil,4
+2024-04-13,Milk,41
+2024-04-13,Rice,14
+2024-04-13,Shampoo,16
+2024-04-13,Soap,16
+2024-04-13,Soft Drink,12
+2024-04-13,Yogurt,8
+2024-04-14,Biscuits,18
+2024-04-14,Bread,14
+2024-04-14,Butter,14
+2024-04-14,Chips,8
+2024-04-14,Chocolate,29
+2024-04-14,Cooking Oil,19
+2024-04-14,Milk,25
+2024-04-14,Rice,23
+2024-04-14,Shampoo,16
+2024-04-14,Soap,28
+2024-04-14,Soft Drink,20
+2024-04-14,Yogurt,21
+2024-04-15,Biscuits,25
+2024-04-15,Bread,8
+2024-04-15,Butter,23
+2024-04-15,Chips,10
+2024-04-15,Chocolate,13
+2024-04-15,Cooking Oil,30
+2024-04-15,Milk,5
+2024-04-15,Rice,7
+2024-04-15,Shampoo,9
+2024-04-15,Soap,16
+2024-04-15,Soft Drink,12
+2024-04-15,Yogurt,10
+2024-04-16,Biscuits,31
+2024-04-16,Bread,16
+2024-04-16,Butter,16
+2024-04-16,Chips,33
+2024-04-16,Chocolate,11
+2024-04-16,Cooking Oil,23
+2024-04-16,Milk,16
+2024-04-16,Rice,15
+2024-04-16,Shampoo,11
+2024-04-16,Soap,20
+2024-04-16,Soft Drink,6
+2024-04-16,Yogurt,25
+2024-04-17,Biscuits,11
+2024-04-17,Bread,16
+2024-04-17,Butter,15
+2024-04-17,Chips,24
+2024-04-17,Chocolate,20
+2024-04-17,Cooking Oil,8
+2024-04-17,Milk,15
+2024-04-17,Rice,13
+2024-04-17,Shampoo,17
+2024-04-17,Soap,7
+2024-04-17,Soft Drink,26
+2024-04-17,Yogurt,37
+2024-04-18,Biscuits,9
+2024-04-18,Bread,15
+2024-04-18,Butter,7
+2024-04-18,Chips,14
+2024-04-18,Chocolate,24
+2024-04-18,Cooking Oil,15
+2024-04-18,Milk,29
+2024-04-18,Rice,32
+2024-04-18,Shampoo,17
+2024-04-18,Soap,12
+2024-04-18,Soft Drink,20
+2024-04-18,Yogurt,14
+2024-04-19,Biscuits,15
+2024-04-19,Bread,10
+2024-04-19,Butter,22
+2024-04-19,Chips,29
+2024-04-19,Chocolate,8
+2024-04-19,Cooking Oil,11
+2024-04-19,Milk,14
+2024-04-19,Rice,6
+2024-04-19,Shampoo,13
+2024-04-19,Soap,16
+2024-04-19,Soft Drink,20
+2024-04-19,Yogurt,7
+2024-04-20,Biscuits,24
+2024-04-20,Bread,8
+2024-04-20,Butter,25
+2024-04-20,Chips,17
+2024-04-20,Chocolate,21
+2024-04-20,Cooking Oil,21
+2024-04-20,Milk,19
+2024-04-20,Rice,7
+2024-04-20,Shampoo,28
+2024-04-20,Soap,11
+2024-04-20,Soft Drink,13
+2024-04-20,Yogurt,13
+2024-04-21,Biscuits,14
+2024-04-21,Bread,18
+2024-04-21,Butter,14
+2024-04-21,Chips,12
+2024-04-21,Chocolate,9
+2024-04-21,Cooking Oil,11
+2024-04-21,Milk,30
+2024-04-21,Rice,24
+2024-04-21,Shampoo,3
+2024-04-21,Soap,18
+2024-04-21,Soft Drink,16
+2024-04-21,Yogurt,23
+2024-04-22,Biscuits,3
+2024-04-22,Bread,21
+2024-04-22,Butter,25
+2024-04-22,Chips,25
+2024-04-22,Chocolate,17
+2024-04-22,Cooking Oil,11
+2024-04-22,Milk,10
+2024-04-22,Rice,14
+2024-04-22,Shampoo,16
+2024-04-22,Soap,16
+2024-04-22,Soft Drink,12
+2024-04-22,Yogurt,14
+2024-04-23,Biscuits,20
+2024-04-23,Bread,12
+2024-04-23,Butter,23
+2024-04-23,Chips,15
+2024-04-23,Chocolate,17
+2024-04-23,Cooking Oil,18
+2024-04-23,Milk,11
+2024-04-23,Rice,20
+2024-04-23,Shampoo,8
+2024-04-23,Soap,22
+2024-04-23,Soft Drink,18
+2024-04-23,Yogurt,13
+2024-04-24,Biscuits,20
+2024-04-24,Bread,13
+2024-04-24,Butter,8
+2024-04-24,Chips,28
+2024-04-24,Chocolate,16
+2024-04-24,Milk,16
+2024-04-24,Rice,18
+2024-04-24,Shampoo,23
+2024-04-24,Soap,29
+2024-04-24,Soft Drink,23
+2024-04-24,Yogurt,12
+2024-04-25,Biscuits,7
+2024-04-25,Bread,13
+2024-04-25,Butter,15
+2024-04-25,Chips,13
+2024-04-25,Chocolate,10
+2024-04-25,Cooking Oil,6
+2024-04-25,Milk,16
+2024-04-25,Rice,3
+2024-04-25,Shampoo,20
+2024-04-25,Soap,21
+2024-04-25,Soft Drink,22
+2024-04-25,Yogurt,18
+2024-04-26,Biscuits,16
+2024-04-26,Bread,19
+2024-04-26,Butter,25
+2024-04-26,Chips,25
+2024-04-26,Chocolate,12
+2024-04-26,Cooking Oil,21
+2024-04-26,Milk,25
+2024-04-26,Rice,8
+2024-04-26,Shampoo,35
+2024-04-26,Soap,22
+2024-04-26,Soft Drink,19
+2024-04-26,Yogurt,8
+2024-04-27,Biscuits,13
+2024-04-27,Bread,12
+2024-04-27,Butter,12
+2024-04-27,Chips,20
+2024-04-27,Chocolate,11
+2024-04-27,Cooking Oil,29
+2024-04-27,Milk,20
+2024-04-27,Rice,14
+2024-04-27,Shampoo,17
+2024-04-27,Soap,10
+2024-04-27,Soft Drink,17
+2024-04-27,Yogurt,14
+2024-04-28,Biscuits,10
+2024-04-28,Bread,22
+2024-04-28,Butter,15
+2024-04-28,Chips,12
+2024-04-28,Chocolate,12
+2024-04-28,Cooking Oil,23
+2024-04-28,Milk,13
+2024-04-28,Rice,13
+2024-04-28,Shampoo,12
+2024-04-28,Soap,16
+2024-04-28,Soft Drink,11
+2024-04-28,Yogurt,16
+2024-04-29,Biscuits,19
+2024-04-29,Bread,9
+2024-04-29,Butter,9
+2024-04-29,Chips,21
+2024-04-29,Chocolate,4
+2024-04-29,Cooking Oil,19
+2024-04-29,Milk,24
+2024-04-29,Rice,19
+2024-04-29,Shampoo,13
+2024-04-29,Soap,27
+2024-04-29,Soft Drink,22
+2024-04-29,Yogurt,23
+2024-04-30,Biscuits,9
+2024-04-30,Bread,19
+2024-04-30,Butter,17
+2024-04-30,Chips,23
+2024-04-30,Chocolate,11
+2024-04-30,Cooking Oil,7
+2024-04-30,Milk,15
+2024-04-30,Rice,5
+2024-04-30,Shampoo,13
+2024-04-30,Soap,24
+2024-04-30,Soft Drink,33
+2024-04-30,Yogurt,15
+2024-05-01,Biscuits,14
+2024-05-01,Bread,20
+2024-05-01,Butter,33
+2024-05-01,Chips,10
+2024-05-01,Chocolate,14
+2024-05-01,Cooking Oil,11
+2024-05-01,Milk,29
+2024-05-01,Rice,16
+2024-05-01,Shampoo,24
+2024-05-01,Soap,10
+2024-05-01,Soft Drink,19
+2024-05-01,Yogurt,24
+2024-05-02,Biscuits,28
+2024-05-02,Bread,18
+2024-05-02,Butter,9
+2024-05-02,Chips,16
+2024-05-02,Chocolate,20
+2024-05-02,Cooking Oil,13
+2024-05-02,Milk,15
+2024-05-02,Rice,15
+2024-05-02,Shampoo,25
+2024-05-02,Soap,11
+2024-05-02,Soft Drink,10
+2024-05-02,Yogurt,5
+2024-05-03,Biscuits,24
+2024-05-03,Bread,14
+2024-05-03,Butter,12
+2024-05-03,Chips,18
+2024-05-03,Chocolate,13
+2024-05-03,Cooking Oil,16
+2024-05-03,Milk,19
+2024-05-03,Rice,7
+2024-05-03,Shampoo,12
+2024-05-03,Soap,23
+2024-05-03,Soft Drink,24
+2024-05-03,Yogurt,16
+2024-05-04,Biscuits,8
+2024-05-04,Bread,20
+2024-05-04,Butter,8
+2024-05-04,Chips,16
+2024-05-04,Chocolate,14
+2024-05-04,Cooking Oil,18
+2024-05-04,Milk,5
+2024-05-04,Rice,6
+2024-05-04,Shampoo,19
+2024-05-04,Soap,22
+2024-05-04,Soft Drink,10
+2024-05-04,Yogurt,17
+2024-05-05,Biscuits,25
+2024-05-05,Bread,13
+2024-05-05,Butter,18
+2024-05-05,Chips,15
+2024-05-05,Chocolate,25
+2024-05-05,Cooking Oil,10
+2024-05-05,Milk,13
+2024-05-05,Rice,17
+2024-05-05,Shampoo,13
+2024-05-05,Soap,3
+2024-05-05,Soft Drink,25
+2024-05-05,Yogurt,11
+2024-05-06,Biscuits,15
+2024-05-06,Bread,22
+2024-05-06,Butter,32
+2024-05-06,Chips,18
+2024-05-06,Chocolate,12
+2024-05-06,Cooking Oil,8
+2024-05-06,Milk,20
+2024-05-06,Rice,13
+2024-05-06,Shampoo,18
+2024-05-06,Soap,35
+2024-05-06,Soft Drink,21
+2024-05-06,Yogurt,20
+2024-05-07,Biscuits,20
+2024-05-07,Bread,16
+2024-05-07,Butter,21
+2024-05-07,Chips,11
+2024-05-07,Chocolate,15
+2024-05-07,Cooking Oil,11
+2024-05-07,Milk,15
+2024-05-07,Rice,13
+2024-05-07,Shampoo,23
+2024-05-07,Soap,7
+2024-05-07,Soft Drink,13
+2024-05-07,Yogurt,23
+2024-05-08,Biscuits,20
+2024-05-08,Bread,12
+2024-05-08,Butter,26
+2024-05-08,Chips,19
+2024-05-08,Chocolate,14
+2024-05-08,Cooking Oil,14
+2024-05-08,Milk,20
+2024-05-08,Rice,6
+2024-05-08,Shampoo,8
+2024-05-08,Soap,20
+2024-05-08,Soft Drink,18
+2024-05-08,Yogurt,5
+2024-05-09,Biscuits,16
+2024-05-09,Bread,28
+2024-05-09,Butter,16
+2024-05-09,Chips,23
+2024-05-09,Chocolate,9
+2024-05-09,Cooking Oil,19
+2024-05-09,Milk,11
+2024-05-09,Rice,11
+2024-05-09,Shampoo,11
+2024-05-09,Soap,18
+2024-05-09,Soft Drink,20
+2024-05-09,Yogurt,16
+2024-05-10,Biscuits,16
+2024-05-10,Bread,21
+2024-05-10,Butter,13
+2024-05-10,Chips,14
+2024-05-10,Chocolate,10
+2024-05-10,Cooking Oil,16
+2024-05-10,Milk,18
+2024-05-10,Rice,12
+2024-05-10,Shampoo,11
+2024-05-10,Soap,12
+2024-05-10,Soft Drink,10
+2024-05-10,Yogurt,6
+2024-05-11,Biscuits,16
+2024-05-11,Bread,12
+2024-05-11,Butter,22
+2024-05-11,Chips,20
+2024-05-11,Chocolate,14
+2024-05-11,Cooking Oil,18
+2024-05-11,Milk,14
+2024-05-11,Rice,17
+2024-05-11,Shampoo,19
+2024-05-11,Soap,11
+2024-05-11,Soft Drink,20
+2024-05-11,Yogurt,9
+2024-05-12,Biscuits,22
+2024-05-12,Bread,16
+2024-05-12,Butter,6
+2024-05-12,Chips,22
+2024-05-12,Chocolate,17
+2024-05-12,Cooking Oil,31
+2024-05-12,Milk,24
+2024-05-12,Rice,16
+2024-05-12,Shampoo,8
+2024-05-12,Soap,10
+2024-05-12,Soft Drink,27
+2024-05-12,Yogurt,13
+2024-05-13,Biscuits,25
+2024-05-13,Bread,35
+2024-05-13,Butter,16
+2024-05-13,Chips,19
+2024-05-13,Chocolate,19
+2024-05-13,Cooking Oil,13
+2024-05-13,Milk,28
+2024-05-13,Rice,22
+2024-05-13,Shampoo,9
+2024-05-13,Soap,14
+2024-05-13,Soft Drink,21
+2024-05-13,Yogurt,22
+2024-05-14,Biscuits,29
+2024-05-14,Bread,13
+2024-05-14,Butter,18
+2024-05-14,Chips,21
+2024-05-14,Chocolate,26
+2024-05-14,Cooking Oil,16
+2024-05-14,Milk,20
+2024-05-14,Rice,8
+2024-05-14,Shampoo,18
+2024-05-14,Soap,14
+2024-05-14,Soft Drink,23
+2024-05-14,Yogurt,11
+2024-05-15,Biscuits,16
+2024-05-15,Bread,12
+2024-05-15,Butter,6
+2024-05-15,Chips,16
+2024-05-15,Chocolate,8
+2024-05-15,Cooking Oil,13
+2024-05-15,Milk,8
+2024-05-15,Rice,24
+2024-05-15,Shampoo,16
+2024-05-15,Soap,8
+2024-05-15,Soft Drink,8
+2024-05-15,Yogurt,20
+2024-05-16,Biscuits,14
+2024-05-16,Bread,11
+2024-05-16,Butter,6
+2024-05-16,Chips,19
+2024-05-16,Chocolate,26
+2024-05-16,Cooking Oil,19
+2024-05-16,Milk,14
+2024-05-16,Rice,5
+2024-05-16,Shampoo,25
+2024-05-16,Soap,28
+2024-05-16,Soft Drink,14
+2024-05-16,Yogurt,27
+2024-05-17,Biscuits,9
+2024-05-17,Bread,9
+2024-05-17,Butter,8
+2024-05-17,Chips,7
+2024-05-17,Chocolate,13
+2024-05-17,Cooking Oil,25
+2024-05-17,Milk,29
+2024-05-17,Rice,14
+2024-05-17,Shampoo,15
+2024-05-17,Soap,18
+2024-05-17,Soft Drink,20
+2024-05-17,Yogurt,17
+2024-05-18,Biscuits,10
+2024-05-18,Bread,16
+2024-05-18,Butter,24
+2024-05-18,Chips,16
+2024-05-18,Chocolate,29
+2024-05-18,Cooking Oil,28
+2024-05-18,Milk,11
+2024-05-18,Rice,22
+2024-05-18,Shampoo,23
+2024-05-18,Soap,19
+2024-05-18,Soft Drink,4
+2024-05-18,Yogurt,18
+2024-05-19,Biscuits,16
+2024-05-19,Bread,20
+2024-05-19,Butter,11
+2024-05-19,Chips,21
+2024-05-19,Chocolate,36
+2024-05-19,Cooking Oil,26
+2024-05-19,Milk,13
+2024-05-19,Rice,9
+2024-05-19,Shampoo,16
+2024-05-19,Soap,32
+2024-05-19,Soft Drink,14
+2024-05-19,Yogurt,3
+2024-05-20,Biscuits,17
+2024-05-20,Bread,27
+2024-05-20,Butter,17
+2024-05-20,Chips,19
+2024-05-20,Chocolate,15
+2024-05-20,Cooking Oil,9
+2024-05-20,Milk,22
+2024-05-20,Rice,29
+2024-05-20,Shampoo,18
+2024-05-20,Soap,22
+2024-05-20,Soft Drink,17
+2024-05-20,Yogurt,26
+2024-05-21,Biscuits,9
+2024-05-21,Bread,11
+2024-05-21,Butter,10
+2024-05-21,Chips,19
+2024-05-21,Chocolate,6
+2024-05-21,Cooking Oil,12
+2024-05-21,Milk,14
+2024-05-21,Rice,30
+2024-05-21,Shampoo,12
+2024-05-21,Soap,5
+2024-05-21,Soft Drink,27
+2024-05-21,Yogurt,16
+2024-05-22,Biscuits,30
+2024-05-22,Bread,15
+2024-05-22,Butter,17
+2024-05-22,Chips,10
+2024-05-22,Chocolate,13
+2024-05-22,Cooking Oil,25
+2024-05-22,Milk,16
+2024-05-22,Rice,14
+2024-05-22,Shampoo,7
+2024-05-22,Soap,16
+2024-05-22,Soft Drink,10
+2024-05-22,Yogurt,22
+2024-05-23,Biscuits,17
+2024-05-23,Bread,13
+2024-05-23,Butter,21
+2024-05-23,Chips,5
+2024-05-23,Chocolate,18
+2024-05-23,Cooking Oil,2
+2024-05-23,Milk,17
+2024-05-23,Rice,12
+2024-05-23,Shampoo,19
+2024-05-23,Soap,20
+2024-05-23,Soft Drink,8
+2024-05-23,Yogurt,20
+2024-05-24,Biscuits,13
+2024-05-24,Bread,10
+2024-05-24,Butter,19
+2024-05-24,Chips,11
+2024-05-24,Chocolate,18
+2024-05-24,Cooking Oil,17
+2024-05-24,Milk,19
+2024-05-24,Rice,9
+2024-05-24,Shampoo,24
+2024-05-24,Soap,9
+2024-05-24,Soft Drink,14
+2024-05-24,Yogurt,6
+2024-05-25,Biscuits,8
+2024-05-25,Bread,9
+2024-05-25,Butter,24
+2024-05-25,Chips,8
+2024-05-25,Chocolate,25
+2024-05-25,Cooking Oil,17
+2024-05-25,Milk,15
+2024-05-25,Rice,19
+2024-05-25,Shampoo,14
+2024-05-25,Soap,26
+2024-05-25,Soft Drink,18
+2024-05-25,Yogurt,19
+2024-05-26,Biscuits,21
+2024-05-26,Bread,30
+2024-05-26,Butter,10
+2024-05-26,Chips,8
+2024-05-26,Chocolate,10
+2024-05-26,Cooking Oil,21
+2024-05-26,Milk,15
+2024-05-26,Rice,21
+2024-05-26,Shampoo,26
+2024-05-26,Soap,8
+2024-05-26,Soft Drink,8
+2024-05-26,Yogurt,7
+2024-05-27,Biscuits,24
+2024-05-27,Bread,10
+2024-05-27,Butter,23
+2024-05-27,Chips,18
+2024-05-27,Chocolate,15
+2024-05-27,Cooking Oil,37
+2024-05-27,Milk,28
+2024-05-27,Rice,10
+2024-05-27,Shampoo,22
+2024-05-27,Soap,24
+2024-05-27,Soft Drink,9
+2024-05-27,Yogurt,4
+2024-05-28,Biscuits,7
+2024-05-28,Bread,11
+2024-05-28,Butter,11
+2024-05-28,Chips,6
+2024-05-28,Chocolate,22
+2024-05-28,Cooking Oil,20
+2024-05-28,Milk,13
+2024-05-28,Rice,15
+2024-05-28,Shampoo,19
+2024-05-28,Soap,12
+2024-05-28,Soft Drink,34
+2024-05-28,Yogurt,11
+2024-05-29,Biscuits,17
+2024-05-29,Bread,21
+2024-05-29,Butter,12
+2024-05-29,Chips,11
+2024-05-29,Chocolate,6
+2024-05-29,Cooking Oil,22
+2024-05-29,Milk,12
+2024-05-29,Rice,9
+2024-05-29,Shampoo,21
+2024-05-29,Soap,13
+2024-05-29,Soft Drink,13
+2024-05-29,Yogurt,25
+2024-05-30,Biscuits,10
+2024-05-30,Bread,24
+2024-05-30,Butter,14
+2024-05-30,Chips,3
+2024-05-30,Chocolate,16
+2024-05-30,Cooking Oil,6
+2024-05-30,Milk,19
+2024-05-30,Rice,15
+2024-05-30,Shampoo,19
+2024-05-30,Soap,12
+2024-05-30,Soft Drink,32
+2024-05-30,Yogurt,11
+2024-05-31,Biscuits,17
+2024-05-31,Bread,20
+2024-05-31,Butter,22
+2024-05-31,Chips,11
+2024-05-31,Chocolate,22
+2024-05-31,Cooking Oil,2
+2024-05-31,Milk,20
+2024-05-31,Rice,19
+2024-05-31,Shampoo,13
+2024-05-31,Soap,12
+2024-05-31,Soft Drink,20
+2024-05-31,Yogurt,27
+2024-06-01,Biscuits,14
+2024-06-01,Bread,12
+2024-06-01,Butter,12
+2024-06-01,Chips,26
+2024-06-01,Chocolate,22
+2024-06-01,Cooking Oil,24
+2024-06-01,Milk,6
+2024-06-01,Rice,7
+2024-06-01,Shampoo,19
+2024-06-01,Soap,18
+2024-06-01,Soft Drink,19
+2024-06-01,Yogurt,38
+2024-06-02,Biscuits,27
+2024-06-02,Bread,14
+2024-06-02,Butter,12
+2024-06-02,Chips,13
+2024-06-02,Chocolate,26
+2024-06-02,Cooking Oil,22
+2024-06-02,Milk,17
+2024-06-02,Rice,11
+2024-06-02,Shampoo,20
+2024-06-02,Soap,26
+2024-06-02,Soft Drink,22
+2024-06-02,Yogurt,19
+2024-06-03,Biscuits,11
+2024-06-03,Bread,23
+2024-06-03,Butter,16
+2024-06-03,Chips,10
+2024-06-03,Chocolate,18
+2024-06-03,Cooking Oil,20
+2024-06-03,Milk,8
+2024-06-03,Rice,11
+2024-06-03,Shampoo,39
+2024-06-03,Soap,18
+2024-06-03,Soft Drink,15
+2024-06-03,Yogurt,11
+2024-06-04,Biscuits,11
+2024-06-04,Bread,16
+2024-06-04,Butter,20
+2024-06-04,Chips,9
+2024-06-04,Chocolate,14
+2024-06-04,Cooking Oil,20
+2024-06-04,Milk,11
+2024-06-04,Rice,9
+2024-06-04,Shampoo,30
+2024-06-04,Soap,21
+2024-06-04,Soft Drink,7
+2024-06-04,Yogurt,20
+2024-06-05,Biscuits,6
+2024-06-05,Bread,20
+2024-06-05,Butter,13
+2024-06-05,Chips,25
+2024-06-05,Chocolate,23
+2024-06-05,Cooking Oil,28
+2024-06-05,Milk,27
+2024-06-05,Rice,10
+2024-06-05,Shampoo,6
+2024-06-05,Soap,15
+2024-06-05,Soft Drink,22
+2024-06-05,Yogurt,23
+2024-06-06,Biscuits,18
+2024-06-06,Bread,35
+2024-06-06,Butter,17
+2024-06-06,Chips,5
+2024-06-06,Chocolate,23
+2024-06-06,Cooking Oil,15
+2024-06-06,Milk,6
+2024-06-06,Rice,10
+2024-06-06,Shampoo,9
+2024-06-06,Soap,14
+2024-06-06,Soft Drink,18
+2024-06-06,Yogurt,7
+2024-06-07,Biscuits,4
+2024-06-07,Bread,6
+2024-06-07,Butter,14
+2024-06-07,Chips,21
+2024-06-07,Chocolate,25
+2024-06-07,Cooking Oil,27
+2024-06-07,Milk,19
+2024-06-07,Rice,39
+2024-06-07,Shampoo,19
+2024-06-07,Soap,16
+2024-06-07,Soft Drink,17
+2024-06-07,Yogurt,11
+2024-06-08,Biscuits,26
+2024-06-08,Bread,12
+2024-06-08,Butter,21
+2024-06-08,Chips,30
+2024-06-08,Chocolate,12
+2024-06-08,Cooking Oil,18
+2024-06-08,Milk,24
+2024-06-08,Rice,13
+2024-06-08,Shampoo,21
+2024-06-08,Soap,13
+2024-06-08,Soft Drink,15
+2024-06-08,Yogurt,20
+2024-06-09,Biscuits,16
+2024-06-09,Bread,13
+2024-06-09,Butter,28
+2024-06-09,Chips,31
+2024-06-09,Chocolate,12
+2024-06-09,Cooking Oil,19
+2024-06-09,Milk,10
+2024-06-09,Rice,8
+2024-06-09,Shampoo,20
+2024-06-09,Soap,32
+2024-06-09,Soft Drink,36
+2024-06-09,Yogurt,22
+2024-06-10,Biscuits,9
+2024-06-10,Bread,20
+2024-06-10,Butter,16
+2024-06-10,Chips,20
+2024-06-10,Chocolate,26
+2024-06-10,Cooking Oil,16
+2024-06-10,Milk,15
+2024-06-10,Rice,21
+2024-06-10,Shampoo,5
+2024-06-10,Soap,8
+2024-06-10,Soft Drink,12
+2024-06-10,Yogurt,21
+2024-06-11,Biscuits,16
+2024-06-11,Bread,21
+2024-06-11,Butter,19
+2024-06-11,Chips,27
+2024-06-11,Chocolate,27
+2024-06-11,Cooking Oil,30
+2024-06-11,Milk,28
+2024-06-11,Rice,13
+2024-06-11,Shampoo,20
+2024-06-11,Soap,16
+2024-06-11,Soft Drink,15
+2024-06-11,Yogurt,2
+2024-06-12,Biscuits,1
+2024-06-12,Bread,18
+2024-06-12,Butter,12
+2024-06-12,Chips,8
+2024-06-12,Chocolate,22
+2024-06-12,Cooking Oil,25
+2024-06-12,Milk,29
+2024-06-12,Rice,15
+2024-06-12,Shampoo,13
+2024-06-12,Soap,23
+2024-06-12,Soft Drink,23
+2024-06-12,Yogurt,19
+2024-06-13,Biscuits,9
+2024-06-13,Bread,13
+2024-06-13,Butter,24
+2024-06-13,Chips,17
+2024-06-13,Chocolate,19
+2024-06-13,Cooking Oil,18
+2024-06-13,Milk,17
+2024-06-13,Rice,17
+2024-06-13,Shampoo,19
+2024-06-13,Soap,15
+2024-06-13,Soft Drink,10
+2024-06-13,Yogurt,21
+2024-06-14,Biscuits,17
+2024-06-14,Bread,18
+2024-06-14,Butter,15
+2024-06-14,Chips,20
+2024-06-14,Chocolate,25
+2024-06-14,Cooking Oil,34
+2024-06-14,Milk,20
+2024-06-14,Rice,19
+2024-06-14,Shampoo,15
+2024-06-14,Soap,16
+2024-06-14,Soft Drink,6
+2024-06-14,Yogurt,17
+2024-06-15,Biscuits,12
+2024-06-15,Bread,17
+2024-06-15,Butter,17
+2024-06-15,Chips,10
+2024-06-15,Chocolate,18
+2024-06-15,Cooking Oil,27
+2024-06-15,Milk,22
+2024-06-15,Rice,20
+2024-06-15,Shampoo,24
+2024-06-15,Soap,20
+2024-06-15,Soft Drink,13
+2024-06-15,Yogurt,12
+2024-06-16,Biscuits,28
+2024-06-16,Bread,14
+2024-06-16,Butter,21
+2024-06-16,Chips,30
+2024-06-16,Chocolate,18
+2024-06-16,Cooking Oil,18
+2024-06-16,Milk,13
+2024-06-16,Rice,25
+2024-06-16,Shampoo,23
+2024-06-16,Soap,35
+2024-06-16,Soft Drink,12
+2024-06-16,Yogurt,25
+2024-06-17,Biscuits,27
+2024-06-17,Bread,19
+2024-06-17,Butter,13
+2024-06-17,Chips,11
+2024-06-17,Chocolate,15
+2024-06-17,Cooking Oil,14
+2024-06-17,Milk,24
+2024-06-17,Rice,15
+2024-06-17,Shampoo,19
+2024-06-17,Soap,3
+2024-06-17,Soft Drink,22
+2024-06-17,Yogurt,18
+2024-06-18,Biscuits,21
+2024-06-18,Bread,20
+2024-06-18,Butter,11
+2024-06-18,Chips,11
+2024-06-18,Chocolate,14
+2024-06-18,Cooking Oil,8
+2024-06-18,Milk,19
+2024-06-18,Rice,23
+2024-06-18,Shampoo,10
+2024-06-18,Soap,16
+2024-06-18,Soft Drink,21
+2024-06-18,Yogurt,15
+2024-06-19,Biscuits,11
+2024-06-19,Bread,14
+2024-06-19,Butter,15
+2024-06-19,Chips,26
+2024-06-19,Chocolate,16
+2024-06-19,Cooking Oil,24
+2024-06-19,Milk,19
+2024-06-19,Rice,15
+2024-06-19,Shampoo,26
+2024-06-19,Soap,16
+2024-06-19,Soft Drink,23
+2024-06-19,Yogurt,10
+2024-06-20,Biscuits,15
+2024-06-20,Bread,24
+2024-06-20,Butter,20
+2024-06-20,Chips,21
+2024-06-20,Chocolate,34
+2024-06-20,Cooking Oil,15
+2024-06-20,Milk,5
+2024-06-20,Rice,22
+2024-06-20,Shampoo,29
+2024-06-20,Soap,15
+2024-06-20,Soft Drink,8
+2024-06-20,Yogurt,13
+2024-06-21,Biscuits,25
+2024-06-21,Bread,18
+2024-06-21,Butter,4
+2024-06-21,Chips,5
+2024-06-21,Chocolate,15
+2024-06-21,Cooking Oil,14
+2024-06-21,Milk,11
+2024-06-21,Rice,9
+2024-06-21,Shampoo,20
+2024-06-21,Soap,21
+2024-06-21,Soft Drink,6
+2024-06-21,Yogurt,11
+2024-06-22,Biscuits,8
+2024-06-22,Bread,26
+2024-06-22,Butter,27
+2024-06-22,Chips,18
+2024-06-22,Chocolate,20
+2024-06-22,Cooking Oil,15
+2024-06-22,Milk,24
+2024-06-22,Rice,24
+2024-06-22,Shampoo,8
+2024-06-22,Soap,17
+2024-06-22,Soft Drink,13
+2024-06-22,Yogurt,15
+2024-06-23,Biscuits,13
+2024-06-23,Bread,6
+2024-06-23,Butter,15
+2024-06-23,Chips,17
+2024-06-23,Chocolate,8
+2024-06-23,Cooking Oil,20
+2024-06-23,Milk,22
+2024-06-23,Rice,21
+2024-06-23,Shampoo,15
+2024-06-23,Soap,21
+2024-06-23,Soft Drink,12
+2024-06-23,Yogurt,9
+2024-06-24,Biscuits,31
+2024-06-24,Bread,13
+2024-06-24,Butter,11
+2024-06-24,Chips,8
+2024-06-24,Chocolate,15
+2024-06-24,Cooking Oil,27
+2024-06-24,Milk,12
+2024-06-24,Rice,20
+2024-06-24,Shampoo,12
+2024-06-24,Soap,10
+2024-06-24,Soft Drink,16
+2024-06-24,Yogurt,19
+2024-06-25,Biscuits,13
+2024-06-25,Bread,13
+2024-06-25,Butter,5
+2024-06-25,Chips,14
+2024-06-25,Chocolate,16
+2024-06-25,Cooking Oil,35
+2024-06-25,Milk,29
+2024-06-25,Rice,16
+2024-06-25,Shampoo,14
+2024-06-25,Soap,15
+2024-06-25,Soft Drink,13
+2024-06-25,Yogurt,11
+2024-06-26,Biscuits,24
+2024-06-26,Bread,37
+2024-06-26,Butter,34
+2024-06-26,Chips,29
+2024-06-26,Chocolate,23
+2024-06-26,Cooking Oil,15
+2024-06-26,Milk,9
+2024-06-26,Rice,19
+2024-06-26,Shampoo,23
+2024-06-26,Soap,15
+2024-06-26,Soft Drink,25
+2024-06-26,Yogurt,17
+2024-06-27,Biscuits,11
+2024-06-27,Bread,14
+2024-06-27,Butter,28
+2024-06-27,Chips,20
+2024-06-27,Chocolate,16
+2024-06-27,Cooking Oil,8
+2024-06-27,Milk,20
+2024-06-27,Rice,12
+2024-06-27,Shampoo,13
+2024-06-27,Soap,6
+2024-06-27,Soft Drink,19
+2024-06-27,Yogurt,32
+2024-06-28,Biscuits,20
+2024-06-28,Bread,20
+2024-06-28,Butter,11
+2024-06-28,Chips,4
+2024-06-28,Chocolate,16
+2024-06-28,Cooking Oil,12
+2024-06-28,Milk,10
+2024-06-28,Rice,26
+2024-06-28,Shampoo,8
+2024-06-28,Soap,29
+2024-06-28,Soft Drink,28
+2024-06-28,Yogurt,14
+2024-06-29,Biscuits,11
+2024-06-29,Bread,23
+2024-06-29,Butter,13
+2024-06-29,Chips,14
+2024-06-29,Chocolate,22
+2024-06-29,Cooking Oil,25
+2024-06-29,Milk,30
+2024-06-29,Rice,24
+2024-06-29,Shampoo,21
+2024-06-29,Soap,16
+2024-06-29,Soft Drink,6
+2024-06-29,Yogurt,24
+2024-06-30,Biscuits,20
+2024-06-30,Bread,16
+2024-06-30,Butter,19
+2024-06-30,Chips,16
+2024-06-30,Chocolate,15
+2024-06-30,Cooking Oil,9
+2024-06-30,Milk,17
+2024-06-30,Rice,13
+2024-06-30,Shampoo,19
+2024-06-30,Soap,13
+2024-06-30,Soft Drink,16
+2024-06-30,Yogurt,24
+2024-07-01,Biscuits,18
+2024-07-01,Bread,16
+2024-07-01,Butter,10
+2024-07-01,Chips,9
+2024-07-01,Chocolate,20
+2024-07-01,Cooking Oil,16
+2024-07-01,Milk,18
+2024-07-01,Rice,16
+2024-07-01,Shampoo,26
+2024-07-01,Soap,15
+2024-07-01,Soft Drink,19
+2024-07-01,Yogurt,18
+2024-07-02,Biscuits,12
+2024-07-02,Bread,18
+2024-07-02,Butter,15
+2024-07-02,Chips,16
+2024-07-02,Chocolate,8
+2024-07-02,Cooking Oil,15
+2024-07-02,Milk,19
+2024-07-02,Rice,10
+2024-07-02,Shampoo,11
+2024-07-02,Soap,16
+2024-07-02,Soft Drink,14
+2024-07-02,Yogurt,10
+2024-07-03,Biscuits,7
+2024-07-03,Bread,15
+2024-07-03,Butter,22
+2024-07-03,Chips,25
+2024-07-03,Chocolate,5
+2024-07-03,Cooking Oil,17
+2024-07-03,Milk,15
+2024-07-03,Rice,27
+2024-07-03,Shampoo,19
+2024-07-03,Soap,13
+2024-07-03,Soft Drink,16
+2024-07-03,Yogurt,20
+2024-07-04,Biscuits,14
+2024-07-04,Bread,39
+2024-07-04,Butter,19
+2024-07-04,Chips,21
+2024-07-04,Chocolate,5
+2024-07-04,Cooking Oil,9
+2024-07-04,Milk,5
+2024-07-04,Rice,18
+2024-07-04,Shampoo,16
+2024-07-04,Soap,22
+2024-07-04,Soft Drink,5
+2024-07-04,Yogurt,26
+2024-07-05,Biscuits,10
+2024-07-05,Bread,18
+2024-07-05,Butter,9
+2024-07-05,Chips,20
+2024-07-05,Chocolate,5
+2024-07-05,Cooking Oil,27
+2024-07-05,Milk,8
+2024-07-05,Rice,24
+2024-07-05,Shampoo,24
+2024-07-05,Soap,26
+2024-07-05,Soft Drink,10
+2024-07-05,Yogurt,18
+2024-07-06,Biscuits,13
+2024-07-06,Bread,9
+2024-07-06,Butter,13
+2024-07-06,Chips,39
+2024-07-06,Chocolate,14
+2024-07-06,Cooking Oil,19
+2024-07-06,Milk,30
+2024-07-06,Rice,10
+2024-07-06,Shampoo,12
+2024-07-06,Soap,20
+2024-07-06,Soft Drink,17
+2024-07-06,Yogurt,24
+2024-07-07,Biscuits,14
+2024-07-07,Bread,18
+2024-07-07,Butter,17
+2024-07-07,Chips,21
+2024-07-07,Chocolate,10
+2024-07-07,Cooking Oil,28
+2024-07-07,Milk,20
+2024-07-07,Rice,11
+2024-07-07,Shampoo,11
+2024-07-07,Soap,4
+2024-07-07,Soft Drink,18
+2024-07-07,Yogurt,17
+2024-07-08,Biscuits,14
+2024-07-08,Bread,32
+2024-07-08,Butter,8
+2024-07-08,Chips,11
+2024-07-08,Chocolate,14
+2024-07-08,Cooking Oil,20
+2024-07-08,Milk,22
+2024-07-08,Rice,13
+2024-07-08,Shampoo,13
+2024-07-08,Soap,20
+2024-07-08,Soft Drink,26
+2024-07-08,Yogurt,14
+2024-07-09,Biscuits,9
+2024-07-09,Bread,11
+2024-07-09,Butter,8
+2024-07-09,Chips,18
+2024-07-09,Chocolate,12
+2024-07-09,Cooking Oil,9
+2024-07-09,Milk,20
+2024-07-09,Rice,21
+2024-07-09,Shampoo,28
+2024-07-09,Soap,7
+2024-07-09,Soft Drink,22
+2024-07-09,Yogurt,8
+2024-07-10,Biscuits,19
+2024-07-10,Bread,15
+2024-07-10,Butter,3
+2024-07-10,Chips,12
+2024-07-10,Chocolate,7
+2024-07-10,Cooking Oil,11
+2024-07-10,Milk,22
+2024-07-10,Rice,19
+2024-07-10,Shampoo,29
+2024-07-10,Soap,17
+2024-07-10,Soft Drink,23
+2024-07-10,Yogurt,8
+2024-07-11,Biscuits,23
+2024-07-11,Bread,15
+2024-07-11,Butter,9
+2024-07-11,Chips,13
+2024-07-11,Chocolate,19
+2024-07-11,Cooking Oil,17
+2024-07-11,Milk,20
+2024-07-11,Rice,16
+2024-07-11,Shampoo,21
+2024-07-11,Soap,8
+2024-07-11,Soft Drink,6
+2024-07-11,Yogurt,13
+2024-07-12,Biscuits,11
+2024-07-12,Bread,7
+2024-07-12,Butter,23
+2024-07-12,Chips,20
+2024-07-12,Chocolate,23
+2024-07-12,Cooking Oil,13
+2024-07-12,Milk,17
+2024-07-12,Rice,13
+2024-07-12,Shampoo,24
+2024-07-12,Soap,23
+2024-07-12,Soft Drink,1
+2024-07-12,Yogurt,13
+2024-07-13,Biscuits,12
+2024-07-13,Bread,11
+2024-07-13,Butter,22
+2024-07-13,Chips,17
+2024-07-13,Chocolate,12
+2024-07-13,Cooking Oil,21
+2024-07-13,Milk,14
+2024-07-13,Rice,6
+2024-07-13,Shampoo,26
+2024-07-13,Soap,17
+2024-07-13,Soft Drink,20
+2024-07-13,Yogurt,8
+2024-07-14,Biscuits,20
+2024-07-14,Bread,16
+2024-07-14,Butter,14
+2024-07-14,Chips,14
+2024-07-14,Chocolate,21
+2024-07-14,Cooking Oil,19
+2024-07-14,Milk,8
+2024-07-14,Rice,7
+2024-07-14,Shampoo,15
+2024-07-14,Soap,20
+2024-07-14,Soft Drink,14
+2024-07-14,Yogurt,23
+2024-07-15,Biscuits,31
+2024-07-15,Bread,22
+2024-07-15,Butter,16
+2024-07-15,Chips,16
+2024-07-15,Chocolate,10
+2024-07-15,Cooking Oil,19
+2024-07-15,Milk,14
+2024-07-15,Rice,28
+2024-07-15,Shampoo,40
+2024-07-15,Soap,44
+2024-07-15,Soft Drink,15
+2024-07-15,Yogurt,23
+2024-07-16,Biscuits,21
+2024-07-16,Bread,21
+2024-07-16,Butter,26
+2024-07-16,Chips,27
+2024-07-16,Chocolate,16
+2024-07-16,Cooking Oil,8
+2024-07-16,Milk,9
+2024-07-16,Rice,18
+2024-07-16,Shampoo,24
+2024-07-16,Soap,19
+2024-07-16,Soft Drink,20
+2024-07-16,Yogurt,14
+2024-07-17,Biscuits,16
+2024-07-17,Bread,13
+2024-07-17,Butter,14
+2024-07-17,Chips,23
+2024-07-17,Chocolate,13
+2024-07-17,Cooking Oil,11
+2024-07-17,Milk,12
+2024-07-17,Rice,7
+2024-07-17,Shampoo,19
+2024-07-17,Soap,17
+2024-07-17,Soft Drink,27
+2024-07-17,Yogurt,14
+2024-07-18,Biscuits,16
+2024-07-18,Bread,7
+2024-07-18,Butter,20
+2024-07-18,Chips,24
+2024-07-18,Chocolate,25
+2024-07-18,Cooking Oil,14
+2024-07-18,Milk,13
+2024-07-18,Rice,13
+2024-07-18,Shampoo,32
+2024-07-18,Soap,9
+2024-07-18,Soft Drink,28
+2024-07-18,Yogurt,15
+2024-07-19,Biscuits,9
+2024-07-19,Bread,11
+2024-07-19,Butter,16
+2024-07-19,Chips,5
+2024-07-19,Chocolate,21
+2024-07-19,Cooking Oil,5
+2024-07-19,Milk,19
+2024-07-19,Rice,14
+2024-07-19,Shampoo,16
+2024-07-19,Soap,7
+2024-07-19,Soft Drink,2
+2024-07-19,Yogurt,14
+2024-07-20,Biscuits,23
+2024-07-20,Bread,16
+2024-07-20,Butter,13
+2024-07-20,Chips,8
+2024-07-20,Chocolate,11
+2024-07-20,Cooking Oil,23
+2024-07-20,Milk,14
+2024-07-20,Rice,17
+2024-07-20,Shampoo,33
+2024-07-20,Soap,18
+2024-07-20,Soft Drink,27
+2024-07-20,Yogurt,25
+2024-07-21,Biscuits,25
+2024-07-21,Bread,9
+2024-07-21,Butter,8
+2024-07-21,Chips,37
+2024-07-21,Chocolate,15
+2024-07-21,Cooking Oil,30
+2024-07-21,Milk,19
+2024-07-21,Rice,17
+2024-07-21,Shampoo,22
+2024-07-21,Soap,8
+2024-07-21,Soft Drink,16
+2024-07-21,Yogurt,28
+2024-07-22,Biscuits,20
+2024-07-22,Bread,40
+2024-07-22,Butter,14
+2024-07-22,Chips,10
+2024-07-22,Chocolate,17
+2024-07-22,Cooking Oil,21
+2024-07-22,Milk,12
+2024-07-22,Rice,18
+2024-07-22,Shampoo,26
+2024-07-22,Soap,20
+2024-07-22,Soft Drink,15
+2024-07-22,Yogurt,15
+2024-07-23,Biscuits,11
+2024-07-23,Bread,12
+2024-07-23,Butter,16
+2024-07-23,Chips,20
+2024-07-23,Chocolate,19
+2024-07-23,Cooking Oil,19
+2024-07-23,Milk,20
+2024-07-23,Rice,14
+2024-07-23,Shampoo,16
+2024-07-23,Soap,24
+2024-07-23,Soft Drink,13
+2024-07-23,Yogurt,16
+2024-07-24,Biscuits,27
+2024-07-24,Bread,15
+2024-07-24,Butter,10
+2024-07-24,Chips,7
+2024-07-24,Chocolate,18
+2024-07-24,Cooking Oil,14
+2024-07-24,Milk,18
+2024-07-24,Rice,29
+2024-07-24,Shampoo,15
+2024-07-24,Soap,11
+2024-07-24,Soft Drink,34
+2024-07-24,Yogurt,26
+2024-07-25,Biscuits,19
+2024-07-25,Bread,15
+2024-07-25,Butter,11
+2024-07-25,Chips,19
+2024-07-25,Chocolate,12
+2024-07-25,Cooking Oil,12
+2024-07-25,Milk,24
+2024-07-25,Rice,23
+2024-07-25,Shampoo,22
+2024-07-25,Soap,21
+2024-07-25,Soft Drink,20
+2024-07-25,Yogurt,26
+2024-07-26,Biscuits,16
+2024-07-26,Bread,12
+2024-07-26,Butter,15
+2024-07-26,Chips,17
+2024-07-26,Chocolate,25
+2024-07-26,Cooking Oil,17
+2024-07-26,Milk,13
+2024-07-26,Rice,17
+2024-07-26,Shampoo,14
+2024-07-26,Soap,4
+2024-07-26,Soft Drink,22
+2024-07-26,Yogurt,25
+2024-07-27,Biscuits,6
+2024-07-27,Bread,26
+2024-07-27,Butter,15
+2024-07-27,Chips,15
+2024-07-27,Chocolate,7
+2024-07-27,Cooking Oil,14
+2024-07-27,Milk,8
+2024-07-27,Rice,19
+2024-07-27,Shampoo,8
+2024-07-27,Soap,27
+2024-07-27,Soft Drink,7
+2024-07-27,Yogurt,21
+2024-07-28,Biscuits,24
+2024-07-28,Bread,22
+2024-07-28,Butter,7
+2024-07-28,Chips,10
+2024-07-28,Chocolate,6
+2024-07-28,Cooking Oil,18
+2024-07-28,Milk,17
+2024-07-28,Rice,17
+2024-07-28,Shampoo,14
+2024-07-28,Soap,26
+2024-07-28,Soft Drink,18
+2024-07-28,Yogurt,16
+2024-07-29,Biscuits,22
+2024-07-29,Bread,31
+2024-07-29,Butter,13
+2024-07-29,Chips,30
+2024-07-29,Chocolate,12
+2024-07-29,Cooking Oil,17
+2024-07-29,Milk,24
+2024-07-29,Rice,32
+2024-07-29,Shampoo,34
+2024-07-29,Soap,29
+2024-07-29,Soft Drink,13
+2024-07-29,Yogurt,11
+2024-07-30,Biscuits,14
+2024-07-30,Bread,16
+2024-07-30,Butter,16
+2024-07-30,Chips,13
+2024-07-30,Chocolate,9
+2024-07-30,Cooking Oil,27
+2024-07-30,Milk,19
+2024-07-30,Rice,23
+2024-07-30,Shampoo,34
+2024-07-30,Soap,7
+2024-07-30,Soft Drink,21
+2024-07-30,Yogurt,26
+2024-07-31,Biscuits,20
+2024-07-31,Bread,11
+2024-07-31,Butter,16
+2024-07-31,Chips,16
+2024-07-31,Chocolate,17
+2024-07-31,Cooking Oil,14
+2024-07-31,Milk,10
+2024-07-31,Rice,8
+2024-07-31,Shampoo,20
+2024-07-31,Soap,21
+2024-07-31,Soft Drink,10
+2024-07-31,Yogurt,14
+2024-08-01,Biscuits,18
+2024-08-01,Bread,21
+2024-08-01,Butter,13
+2024-08-01,Chips,13
+2024-08-01,Chocolate,7
+2024-08-01,Cooking Oil,15
+2024-08-01,Milk,21
+2024-08-01,Rice,12
+2024-08-01,Shampoo,10
+2024-08-01,Soap,17
+2024-08-01,Soft Drink,17
+2024-08-01,Yogurt,14
+2024-08-02,Biscuits,19
+2024-08-02,Bread,5
+2024-08-02,Butter,15
+2024-08-02,Chips,17
+2024-08-02,Chocolate,14
+2024-08-02,Cooking Oil,22
+2024-08-02,Milk,15
+2024-08-02,Rice,25
+2024-08-02,Shampoo,10
+2024-08-02,Soap,17
+2024-08-02,Soft Drink,22
+2024-08-02,Yogurt,24
+2024-08-03,Biscuits,14
+2024-08-03,Bread,17
+2024-08-03,Butter,15
+2024-08-03,Chips,21
+2024-08-03,Chocolate,27
+2024-08-03,Cooking Oil,33
+2024-08-03,Milk,9
+2024-08-03,Rice,14
+2024-08-03,Shampoo,21
+2024-08-03,Soap,15
+2024-08-03,Soft Drink,11
+2024-08-03,Yogurt,17
+2024-08-04,Biscuits,10
+2024-08-04,Bread,14
+2024-08-04,Butter,21
+2024-08-04,Chips,10
+2024-08-04,Chocolate,17
+2024-08-04,Cooking Oil,26
+2024-08-04,Milk,23
+2024-08-04,Rice,14
+2024-08-04,Shampoo,17
+2024-08-04,Soap,43
+2024-08-04,Soft Drink,25
+2024-08-04,Yogurt,9
+2024-08-05,Biscuits,36
+2024-08-05,Bread,30
+2024-08-05,Butter,9
+2024-08-05,Chips,14
+2024-08-05,Chocolate,21
+2024-08-05,Cooking Oil,5
+2024-08-05,Milk,10
+2024-08-05,Rice,5
+2024-08-05,Shampoo,18
+2024-08-05,Soap,11
+2024-08-05,Soft Drink,24
+2024-08-05,Yogurt,14
+2024-08-06,Biscuits,5
+2024-08-06,Bread,29
+2024-08-06,Butter,19
+2024-08-06,Chips,11
+2024-08-06,Chocolate,14
+2024-08-06,Cooking Oil,15
+2024-08-06,Milk,19
+2024-08-06,Rice,6
+2024-08-06,Shampoo,3
+2024-08-06,Soap,6
+2024-08-06,Soft Drink,23
+2024-08-06,Yogurt,13
+2024-08-07,Biscuits,13
+2024-08-07,Bread,9
+2024-08-07,Butter,24
+2024-08-07,Chips,15
+2024-08-07,Chocolate,22
+2024-08-07,Cooking Oil,11
+2024-08-07,Milk,45
+2024-08-07,Rice,16
+2024-08-07,Shampoo,10
+2024-08-07,Soap,34
+2024-08-07,Soft Drink,34
+2024-08-07,Yogurt,19
+2024-08-08,Biscuits,8
+2024-08-08,Bread,4
+2024-08-08,Butter,23
+2024-08-08,Chips,31
+2024-08-08,Chocolate,38
+2024-08-08,Cooking Oil,18
+2024-08-08,Milk,29
+2024-08-08,Rice,15
+2024-08-08,Shampoo,9
+2024-08-08,Soap,28
+2024-08-08,Soft Drink,22
+2024-08-08,Yogurt,33
+2024-08-09,Biscuits,8
+2024-08-09,Bread,23
+2024-08-09,Butter,27
+2024-08-09,Chips,10
+2024-08-09,Chocolate,7
+2024-08-09,Cooking Oil,22
+2024-08-09,Milk,30
+2024-08-09,Rice,26
+2024-08-09,Shampoo,13
+2024-08-09,Soap,20
+2024-08-09,Soft Drink,23
+2024-08-09,Yogurt,7
+2024-08-10,Biscuits,13
+2024-08-10,Bread,23
+2024-08-10,Butter,15
+2024-08-10,Chips,18
+2024-08-10,Chocolate,26
+2024-08-10,Cooking Oil,25
+2024-08-10,Milk,30
+2024-08-10,Rice,24
+2024-08-10,Shampoo,26
+2024-08-10,Soap,21
+2024-08-10,Soft Drink,5
+2024-08-10,Yogurt,5
+2024-08-11,Bread,15
+2024-08-11,Butter,18
+2024-08-11,Chips,14
+2024-08-11,Chocolate,19
+2024-08-11,Cooking Oil,21
+2024-08-11,Milk,20
+2024-08-11,Rice,15
+2024-08-11,Shampoo,20
+2024-08-11,Soap,12
+2024-08-11,Soft Drink,10
+2024-08-11,Yogurt,15
+2024-08-12,Biscuits,12
+2024-08-12,Bread,25
+2024-08-12,Butter,16
+2024-08-12,Chips,19
+2024-08-12,Chocolate,9
+2024-08-12,Cooking Oil,13
+2024-08-12,Milk,22
+2024-08-12,Rice,27
+2024-08-12,Shampoo,14
+2024-08-12,Soap,22
+2024-08-12,Soft Drink,7
+2024-08-12,Yogurt,18
+2024-08-13,Biscuits,18
+2024-08-13,Bread,12
+2024-08-13,Butter,18
+2024-08-13,Chips,23
+2024-08-13,Chocolate,8
+2024-08-13,Cooking Oil,25
+2024-08-13,Milk,20
+2024-08-13,Rice,11
+2024-08-13,Shampoo,6
+2024-08-13,Soap,12
+2024-08-13,Soft Drink,6
+2024-08-13,Yogurt,10
+2024-08-14,Biscuits,13
+2024-08-14,Bread,13
+2024-08-14,Butter,13
+2024-08-14,Chips,14
+2024-08-14,Chocolate,21
+2024-08-14,Cooking Oil,16
+2024-08-14,Milk,21
+2024-08-14,Rice,14
+2024-08-14,Shampoo,13
+2024-08-14,Soap,14
+2024-08-14,Soft Drink,26
+2024-08-14,Yogurt,26
+2024-08-15,Biscuits,10
+2024-08-15,Bread,16
+2024-08-15,Butter,43
+2024-08-15,Chips,10
+2024-08-15,Chocolate,15
+2024-08-15,Cooking Oil,8
+2024-08-15,Milk,13
+2024-08-15,Rice,13
+2024-08-15,Shampoo,17
+2024-08-15,Soap,21
+2024-08-15,Soft Drink,15
+2024-08-15,Yogurt,15
+2024-08-16,Biscuits,20
+2024-08-16,Bread,14
+2024-08-16,Butter,21
+2024-08-16,Chips,19
+2024-08-16,Chocolate,13
+2024-08-16,Cooking Oil,14
+2024-08-16,Milk,10
+2024-08-16,Rice,9
+2024-08-16,Shampoo,21
+2024-08-16,Soap,16
+2024-08-16,Soft Drink,10
+2024-08-16,Yogurt,16
+2024-08-17,Biscuits,20
+2024-08-17,Bread,24
+2024-08-17,Butter,30
+2024-08-17,Chips,5
+2024-08-17,Chocolate,16
+2024-08-17,Cooking Oil,11
+2024-08-17,Milk,22
+2024-08-17,Rice,17
+2024-08-17,Shampoo,19
+2024-08-17,Soap,28
+2024-08-17,Soft Drink,20
+2024-08-17,Yogurt,13
+2024-08-18,Biscuits,3
+2024-08-18,Bread,8
+2024-08-18,Butter,23
+2024-08-18,Chips,12
+2024-08-18,Chocolate,20
+2024-08-18,Cooking Oil,15
+2024-08-18,Milk,15
+2024-08-18,Rice,15
+2024-08-18,Shampoo,25
+2024-08-18,Soap,17
+2024-08-18,Soft Drink,18
+2024-08-18,Yogurt,23
+2024-08-19,Biscuits,10
+2024-08-19,Bread,14
+2024-08-19,Butter,22
+2024-08-19,Chips,25
+2024-08-19,Chocolate,26
+2024-08-19,Cooking Oil,25
+2024-08-19,Milk,29
+2024-08-19,Rice,21
+2024-08-19,Shampoo,9
+2024-08-19,Soap,21
+2024-08-19,Soft Drink,43
+2024-08-19,Yogurt,16
+2024-08-20,Biscuits,16
+2024-08-20,Bread,3
+2024-08-20,Butter,26
+2024-08-20,Chips,9
+2024-08-20,Chocolate,16
+2024-08-20,Cooking Oil,29
+2024-08-20,Milk,22
+2024-08-20,Rice,16
+2024-08-20,Shampoo,17
+2024-08-20,Soap,15
+2024-08-20,Soft Drink,8
+2024-08-20,Yogurt,18
+2024-08-21,Biscuits,25
+2024-08-21,Bread,21
+2024-08-21,Butter,14
+2024-08-21,Chips,15
+2024-08-21,Chocolate,20
+2024-08-21,Cooking Oil,8
+2024-08-21,Milk,17
+2024-08-21,Rice,27
+2024-08-21,Shampoo,16
+2024-08-21,Soap,4
+2024-08-21,Soft Drink,7
+2024-08-21,Yogurt,10
+2024-08-22,Biscuits,32
+2024-08-22,Bread,19
+2024-08-22,Butter,5
+2024-08-22,Chips,18
+2024-08-22,Chocolate,11
+2024-08-22,Cooking Oil,14
+2024-08-22,Milk,19
+2024-08-22,Rice,18
+2024-08-22,Shampoo,33
+2024-08-22,Soap,14
+2024-08-22,Soft Drink,9
+2024-08-22,Yogurt,20
+2024-08-23,Biscuits,21
+2024-08-23,Bread,32
+2024-08-23,Butter,14
+2024-08-23,Chips,22
+2024-08-23,Chocolate,22
+2024-08-23,Cooking Oil,25
+2024-08-23,Milk,20
+2024-08-23,Rice,17
+2024-08-23,Shampoo,24
+2024-08-23,Soap,18
+2024-08-23,Soft Drink,6
+2024-08-23,Yogurt,21
+2024-08-24,Biscuits,18
+2024-08-24,Bread,7
+2024-08-24,Butter,40
+2024-08-24,Chips,19
+2024-08-24,Chocolate,10
+2024-08-24,Cooking Oil,15
+2024-08-24,Milk,7
+2024-08-24,Rice,18
+2024-08-24,Shampoo,16
+2024-08-24,Soap,21
+2024-08-24,Soft Drink,16
+2024-08-24,Yogurt,11
+2024-08-25,Biscuits,15
+2024-08-25,Bread,19
+2024-08-25,Butter,12
+2024-08-25,Chips,14
+2024-08-25,Chocolate,20
+2024-08-25,Cooking Oil,13
+2024-08-25,Milk,12
+2024-08-25,Rice,20
+2024-08-25,Shampoo,15
+2024-08-25,Soap,13
+2024-08-25,Soft Drink,13
+2024-08-25,Yogurt,9
+2024-08-26,Biscuits,10
+2024-08-26,Bread,13
+2024-08-26,Butter,7
+2024-08-26,Chips,22
+2024-08-26,Chocolate,12
+2024-08-26,Cooking Oil,20
+2024-08-26,Milk,8
+2024-08-26,Rice,29
+2024-08-26,Shampoo,19
+2024-08-26,Soap,13
+2024-08-26,Soft Drink,12
+2024-08-26,Yogurt,23
+2024-08-27,Biscuits,8
+2024-08-27,Bread,25
+2024-08-27,Butter,22
+2024-08-27,Chips,19
+2024-08-27,Chocolate,27
+2024-08-27,Cooking Oil,12
+2024-08-27,Milk,12
+2024-08-27,Rice,7
+2024-08-27,Shampoo,24
+2024-08-27,Soap,8
+2024-08-27,Soft Drink,15
+2024-08-27,Yogurt,10
+2024-08-28,Biscuits,20
+2024-08-28,Bread,14
+2024-08-28,Butter,12
+2024-08-28,Chips,34
+2024-08-28,Chocolate,9
+2024-08-28,Cooking Oil,27
+2024-08-28,Milk,26
+2024-08-28,Rice,8
+2024-08-28,Shampoo,32
+2024-08-28,Soap,17
+2024-08-28,Soft Drink,28
+2024-08-28,Yogurt,27
+2024-08-29,Biscuits,13
+2024-08-29,Bread,31
+2024-08-29,Butter,22
+2024-08-29,Chips,4
+2024-08-29,Chocolate,17
+2024-08-29,Cooking Oil,19
+2024-08-29,Milk,44
+2024-08-29,Rice,19
+2024-08-29,Shampoo,9
+2024-08-29,Soap,29
+2024-08-29,Soft Drink,20
+2024-08-29,Yogurt,6
+2024-08-30,Biscuits,28
+2024-08-30,Bread,14
+2024-08-30,Butter,12
+2024-08-30,Chips,18
+2024-08-30,Chocolate,16
+2024-08-30,Cooking Oil,25
+2024-08-30,Milk,20
+2024-08-30,Rice,18
+2024-08-30,Shampoo,13
+2024-08-30,Soap,7
+2024-08-30,Soft Drink,21
+2024-08-30,Yogurt,11
+2024-08-31,Biscuits,19
+2024-08-31,Bread,9
+2024-08-31,Butter,17
+2024-08-31,Chips,17
+2024-08-31,Chocolate,10
+2024-08-31,Cooking Oil,25
+2024-08-31,Milk,21
+2024-08-31,Rice,17
+2024-08-31,Shampoo,15
+2024-08-31,Soap,9
+2024-08-31,Soft Drink,12
+2024-08-31,Yogurt,18
+2024-09-01,Biscuits,31
+2024-09-01,Bread,17
+2024-09-01,Butter,16
+2024-09-01,Chips,19
+2024-09-01,Chocolate,13
+2024-09-01,Cooking Oil,14
+2024-09-01,Milk,20
+2024-09-01,Rice,14
+2024-09-01,Shampoo,18
+2024-09-01,Soap,21
+2024-09-01,Soft Drink,24
+2024-09-01,Yogurt,13
+2024-09-02,Biscuits,17
+2024-09-02,Bread,21
+2024-09-02,Butter,16
+2024-09-02,Chips,14
+2024-09-02,Chocolate,14
+2024-09-02,Cooking Oil,21
+2024-09-02,Milk,20
+2024-09-02,Rice,6
+2024-09-02,Shampoo,20
+2024-09-02,Soap,24
+2024-09-02,Soft Drink,31
+2024-09-02,Yogurt,9
+2024-09-03,Biscuits,11
+2024-09-03,Bread,23
+2024-09-03,Butter,17
+2024-09-03,Chips,15
+2024-09-03,Chocolate,35
+2024-09-03,Cooking Oil,8
+2024-09-03,Milk,12
+2024-09-03,Rice,13
+2024-09-03,Shampoo,21
+2024-09-03,Soap,34
+2024-09-03,Soft Drink,20
+2024-09-03,Yogurt,14
+2024-09-04,Biscuits,11
+2024-09-04,Bread,16
+2024-09-04,Butter,13
+2024-09-04,Chips,13
+2024-09-04,Chocolate,8
+2024-09-04,Cooking Oil,12
+2024-09-04,Milk,18
+2024-09-04,Rice,16
+2024-09-04,Shampoo,8
+2024-09-04,Soap,20
+2024-09-04,Soft Drink,8
+2024-09-04,Yogurt,26
+2024-09-05,Biscuits,24
+2024-09-05,Bread,27
+2024-09-05,Butter,15
+2024-09-05,Chips,11
+2024-09-05,Chocolate,12
+2024-09-05,Cooking Oil,24
+2024-09-05,Milk,18
+2024-09-05,Rice,16
+2024-09-05,Shampoo,19
+2024-09-05,Soap,21
+2024-09-05,Soft Drink,21
+2024-09-05,Yogurt,18
+2024-09-06,Biscuits,12
+2024-09-06,Bread,5
+2024-09-06,Butter,19
+2024-09-06,Chips,13
+2024-09-06,Chocolate,18
+2024-09-06,Cooking Oil,20
+2024-09-06,Milk,16
+2024-09-06,Rice,24
+2024-09-06,Shampoo,31
+2024-09-06,Soap,13
+2024-09-06,Soft Drink,11
+2024-09-06,Yogurt,12
+2024-09-07,Biscuits,18
+2024-09-07,Bread,18
+2024-09-07,Butter,15
+2024-09-07,Chips,12
+2024-09-07,Chocolate,25
+2024-09-07,Cooking Oil,32
+2024-09-07,Milk,11
+2024-09-07,Rice,14
+2024-09-07,Shampoo,18
+2024-09-07,Soap,16
+2024-09-07,Soft Drink,15
+2024-09-07,Yogurt,20
+2024-09-08,Biscuits,23
+2024-09-08,Bread,10
+2024-09-08,Butter,12
+2024-09-08,Chips,23
+2024-09-08,Chocolate,8
+2024-09-08,Cooking Oil,23
+2024-09-08,Milk,15
+2024-09-08,Rice,23
+2024-09-08,Shampoo,5
+2024-09-08,Soap,10
+2024-09-08,Soft Drink,18
+2024-09-08,Yogurt,29
+2024-09-09,Biscuits,10
+2024-09-09,Bread,13
+2024-09-09,Butter,22
+2024-09-09,Chips,20
+2024-09-09,Chocolate,11
+2024-09-09,Cooking Oil,17
+2024-09-09,Milk,25
+2024-09-09,Rice,17
+2024-09-09,Shampoo,18
+2024-09-09,Soap,16
+2024-09-09,Soft Drink,18
+2024-09-09,Yogurt,23
+2024-09-10,Biscuits,18
+2024-09-10,Bread,6
+2024-09-10,Butter,4
+2024-09-10,Chips,27
+2024-09-10,Chocolate,14
+2024-09-10,Cooking Oil,30
+2024-09-10,Milk,29
+2024-09-10,Rice,14
+2024-09-10,Shampoo,21
+2024-09-10,Soap,13
+2024-09-10,Soft Drink,21
+2024-09-10,Yogurt,9
+2024-09-11,Biscuits,12
+2024-09-11,Bread,22
+2024-09-11,Butter,13
+2024-09-11,Chips,20
+2024-09-11,Chocolate,24
+2024-09-11,Cooking Oil,13
+2024-09-11,Milk,17
+2024-09-11,Rice,22
+2024-09-11,Shampoo,9
+2024-09-11,Soap,23
+2024-09-11,Soft Drink,16
+2024-09-11,Yogurt,26
+2024-09-12,Biscuits,30
+2024-09-12,Bread,9
+2024-09-12,Butter,15
+2024-09-12,Chips,14
+2024-09-12,Chocolate,13
+2024-09-12,Cooking Oil,25
+2024-09-12,Milk,24
+2024-09-12,Rice,11
+2024-09-12,Shampoo,19
+2024-09-12,Soap,13
+2024-09-12,Soft Drink,8
+2024-09-12,Yogurt,41
+2024-09-13,Biscuits,37
+2024-09-13,Bread,20
+2024-09-13,Butter,21
+2024-09-13,Chips,23
+2024-09-13,Chocolate,14
+2024-09-13,Cooking Oil,23
+2024-09-13,Milk,4
+2024-09-13,Rice,22
+2024-09-13,Shampoo,8
+2024-09-13,Soap,10
+2024-09-13,Soft Drink,20
+2024-09-13,Yogurt,22
+2024-09-14,Biscuits,14
+2024-09-14,Bread,20
+2024-09-14,Butter,9
+2024-09-14,Chips,21
+2024-09-14,Chocolate,8
+2024-09-14,Cooking Oil,28
+2024-09-14,Milk,23
+2024-09-14,Rice,8
+2024-09-14,Shampoo,5
+2024-09-14,Soap,16
+2024-09-14,Soft Drink,12
+2024-09-14,Yogurt,12
+2024-09-15,Biscuits,10
+2024-09-15,Bread,19
+2024-09-15,Butter,20
+2024-09-15,Chips,10
+2024-09-15,Chocolate,3
+2024-09-15,Cooking Oil,10
+2024-09-15,Milk,11
+2024-09-15,Rice,32
+2024-09-15,Shampoo,19
+2024-09-15,Soap,25
+2024-09-15,Soft Drink,17
+2024-09-15,Yogurt,8
+2024-09-16,Biscuits,28
+2024-09-16,Bread,21
+2024-09-16,Butter,19
+2024-09-16,Chips,10
+2024-09-16,Chocolate,12
+2024-09-16,Cooking Oil,9
+2024-09-16,Milk,12
+2024-09-16,Rice,33
+2024-09-16,Shampoo,12
+2024-09-16,Soap,12
+2024-09-16,Soft Drink,19
+2024-09-16,Yogurt,9
+2024-09-17,Biscuits,20
+2024-09-17,Bread,25
+2024-09-17,Butter,27
+2024-09-17,Chips,15
+2024-09-17,Chocolate,9
+2024-09-17,Cooking Oil,6
+2024-09-17,Milk,14
+2024-09-17,Rice,15
+2024-09-17,Shampoo,13
+2024-09-17,Soap,13
+2024-09-17,Soft Drink,23
+2024-09-17,Yogurt,8
+2024-09-18,Biscuits,12
+2024-09-18,Bread,20
+2024-09-18,Butter,7
+2024-09-18,Chips,24
+2024-09-18,Chocolate,21
+2024-09-18,Cooking Oil,16
+2024-09-18,Milk,27
+2024-09-18,Rice,26
+2024-09-18,Shampoo,13
+2024-09-18,Soap,30
+2024-09-18,Soft Drink,5
+2024-09-18,Yogurt,2
+2024-09-19,Biscuits,6
+2024-09-19,Bread,17
+2024-09-19,Butter,11
+2024-09-19,Chips,23
+2024-09-19,Chocolate,16
+2024-09-19,Cooking Oil,20
+2024-09-19,Milk,12
+2024-09-19,Rice,18
+2024-09-19,Shampoo,20
+2024-09-19,Soap,22
+2024-09-19,Soft Drink,5
+2024-09-19,Yogurt,15
+2024-09-20,Biscuits,8
+2024-09-20,Bread,24
+2024-09-20,Butter,13
+2024-09-20,Chips,18
+2024-09-20,Chocolate,19
+2024-09-20,Cooking Oil,5
+2024-09-20,Milk,22
+2024-09-20,Rice,23
+2024-09-20,Shampoo,15
+2024-09-20,Soap,26
+2024-09-20,Soft Drink,13
+2024-09-20,Yogurt,10
+2024-09-21,Biscuits,17
+2024-09-21,Bread,11
+2024-09-21,Butter,10
+2024-09-21,Chips,21
+2024-09-21,Chocolate,17
+2024-09-21,Cooking Oil,30
+2024-09-21,Milk,12
+2024-09-21,Rice,12
+2024-09-21,Shampoo,13
+2024-09-21,Soap,7
+2024-09-21,Soft Drink,23
+2024-09-21,Yogurt,15
+2024-09-22,Biscuits,19
+2024-09-22,Bread,13
+2024-09-22,Butter,29
+2024-09-22,Chips,16
+2024-09-22,Chocolate,5
+2024-09-22,Cooking Oil,18
+2024-09-22,Milk,26
+2024-09-22,Rice,18
+2024-09-22,Shampoo,9
+2024-09-22,Soap,11
+2024-09-22,Soft Drink,22
+2024-09-22,Yogurt,12
+2024-09-23,Biscuits,9
+2024-09-23,Bread,14
+2024-09-23,Butter,12
+2024-09-23,Chips,6
+2024-09-23,Chocolate,11
+2024-09-23,Cooking Oil,15
+2024-09-23,Milk,13
+2024-09-23,Rice,14
+2024-09-23,Shampoo,21
+2024-09-23,Soap,21
+2024-09-23,Soft Drink,15
+2024-09-23,Yogurt,10
+2024-09-24,Biscuits,5
+2024-09-24,Bread,15
+2024-09-24,Butter,14
+2024-09-24,Chips,18
+2024-09-24,Chocolate,15
+2024-09-24,Cooking Oil,28
+2024-09-24,Milk,32
+2024-09-24,Rice,21
+2024-09-24,Shampoo,19
+2024-09-24,Soap,19
+2024-09-24,Soft Drink,21
+2024-09-24,Yogurt,17
+2024-09-25,Biscuits,9
+2024-09-25,Bread,26
+2024-09-25,Butter,28
+2024-09-25,Chips,24
+2024-09-25,Chocolate,6
+2024-09-25,Cooking Oil,20
+2024-09-25,Milk,19
+2024-09-25,Rice,13
+2024-09-25,Shampoo,18
+2024-09-25,Soap,12
+2024-09-25,Soft Drink,30
+2024-09-25,Yogurt,11
+2024-09-26,Biscuits,13
+2024-09-26,Bread,20
+2024-09-26,Butter,13
+2024-09-26,Chips,16
+2024-09-26,Chocolate,30
+2024-09-26,Cooking Oil,33
+2024-09-26,Milk,27
+2024-09-26,Rice,19
+2024-09-26,Shampoo,11
+2024-09-26,Soap,5
+2024-09-26,Soft Drink,17
+2024-09-26,Yogurt,23
+2024-09-27,Biscuits,13
+2024-09-27,Bread,14
+2024-09-27,Butter,17
+2024-09-27,Chips,8
+2024-09-27,Chocolate,10
+2024-09-27,Cooking Oil,18
+2024-09-27,Milk,19
+2024-09-27,Rice,18
+2024-09-27,Shampoo,7
+2024-09-27,Soap,12
+2024-09-27,Soft Drink,10
+2024-09-27,Yogurt,11
+2024-09-28,Biscuits,5
+2024-09-28,Bread,6
+2024-09-28,Butter,17
+2024-09-28,Chips,23
+2024-09-28,Chocolate,4
+2024-09-28,Cooking Oil,24
+2024-09-28,Milk,27
+2024-09-28,Rice,12
+2024-09-28,Shampoo,26
+2024-09-28,Soap,6
+2024-09-28,Soft Drink,24
+2024-09-28,Yogurt,12
+2024-09-29,Biscuits,22
+2024-09-29,Bread,19
+2024-09-29,Butter,19
+2024-09-29,Chips,14
+2024-09-29,Chocolate,4
+2024-09-29,Cooking Oil,5
+2024-09-29,Milk,18
+2024-09-29,Rice,10
+2024-09-29,Shampoo,12
+2024-09-29,Soap,19
+2024-09-29,Soft Drink,28
+2024-09-29,Yogurt,26
+2024-09-30,Biscuits,10
+2024-09-30,Bread,20
+2024-09-30,Butter,19
+2024-09-30,Chips,30
+2024-09-30,Chocolate,16
+2024-09-30,Cooking Oil,16
+2024-09-30,Milk,30
+2024-09-30,Rice,30
+2024-09-30,Shampoo,18
+2024-09-30,Soap,12
+2024-09-30,Soft Drink,25
+2024-09-30,Yogurt,18
+2024-10-01,Biscuits,2
+2024-10-01,Bread,20
+2024-10-01,Butter,15
+2024-10-01,Chips,17
+2024-10-01,Chocolate,8
+2024-10-01,Cooking Oil,22
+2024-10-01,Milk,15
+2024-10-01,Rice,16
+2024-10-01,Shampoo,21
+2024-10-01,Soap,42
+2024-10-01,Soft Drink,19
+2024-10-01,Yogurt,8
+2024-10-02,Biscuits,16
+2024-10-02,Bread,25
+2024-10-02,Butter,8
+2024-10-02,Chips,20
+2024-10-02,Chocolate,18
+2024-10-02,Cooking Oil,17
+2024-10-02,Milk,13
+2024-10-02,Rice,20
+2024-10-02,Shampoo,17
+2024-10-02,Soap,16
+2024-10-02,Soft Drink,13
+2024-10-02,Yogurt,12
+2024-10-03,Biscuits,25
+2024-10-03,Bread,9
+2024-10-03,Butter,14
+2024-10-03,Chips,23
+2024-10-03,Chocolate,13
+2024-10-03,Cooking Oil,18
+2024-10-03,Milk,15
+2024-10-03,Rice,14
+2024-10-03,Shampoo,25
+2024-10-03,Soap,21
+2024-10-03,Soft Drink,11
+2024-10-03,Yogurt,11
+2024-10-04,Biscuits,15
+2024-10-04,Bread,12
+2024-10-04,Butter,5
+2024-10-04,Chips,25
+2024-10-04,Chocolate,8
+2024-10-04,Cooking Oil,17
+2024-10-04,Milk,29
+2024-10-04,Rice,13
+2024-10-04,Shampoo,14
+2024-10-04,Soap,8
+2024-10-04,Soft Drink,22
+2024-10-04,Yogurt,18
+2024-10-05,Biscuits,12
+2024-10-05,Bread,21
+2024-10-05,Butter,13
+2024-10-05,Chips,9
+2024-10-05,Chocolate,26
+2024-10-05,Cooking Oil,22
+2024-10-05,Milk,9
+2024-10-05,Rice,24
+2024-10-05,Shampoo,15
+2024-10-05,Soap,17
+2024-10-05,Soft Drink,14
+2024-10-05,Yogurt,14
+2024-10-06,Biscuits,15
+2024-10-06,Bread,20
+2024-10-06,Butter,17
+2024-10-06,Chips,24
+2024-10-06,Chocolate,11
+2024-10-06,Cooking Oil,12
+2024-10-06,Milk,25
+2024-10-06,Rice,23
+2024-10-06,Shampoo,17
+2024-10-06,Soap,13
+2024-10-06,Soft Drink,13
+2024-10-06,Yogurt,31
+2024-10-07,Biscuits,37
+2024-10-07,Bread,9
+2024-10-07,Butter,15
+2024-10-07,Chips,24
+2024-10-07,Chocolate,14
+2024-10-07,Cooking Oil,11
+2024-10-07,Milk,13
+2024-10-07,Rice,22
+2024-10-07,Shampoo,22
+2024-10-07,Soap,14
+2024-10-07,Soft Drink,12
+2024-10-07,Yogurt,21
+2024-10-08,Biscuits,23
+2024-10-08,Bread,22
+2024-10-08,Butter,26
+2024-10-08,Chips,11
+2024-10-08,Chocolate,25
+2024-10-08,Cooking Oil,16
+2024-10-08,Milk,21
+2024-10-08,Rice,11
+2024-10-08,Shampoo,24
+2024-10-08,Soap,12
+2024-10-08,Soft Drink,26
+2024-10-08,Yogurt,20
+2024-10-09,Biscuits,31
+2024-10-09,Bread,23
+2024-10-09,Butter,24
+2024-10-09,Chips,16
+2024-10-09,Chocolate,9
+2024-10-09,Cooking Oil,25
+2024-10-09,Milk,10
+2024-10-09,Rice,18
+2024-10-09,Shampoo,34
+2024-10-09,Soap,11
+2024-10-09,Soft Drink,28
+2024-10-09,Yogurt,13
+2024-10-10,Biscuits,26
+2024-10-10,Bread,14
+2024-10-10,Butter,17
+2024-10-10,Chips,27
+2024-10-10,Chocolate,16
+2024-10-10,Cooking Oil,22
+2024-10-10,Milk,23
+2024-10-10,Rice,33
+2024-10-10,Shampoo,18
+2024-10-10,Soap,21
+2024-10-10,Soft Drink,13
+2024-10-10,Yogurt,15
+2024-10-11,Biscuits,20
+2024-10-11,Bread,28
+2024-10-11,Butter,12
+2024-10-11,Chips,23
+2024-10-11,Chocolate,20
+2024-10-11,Cooking Oil,19
+2024-10-11,Milk,12
+2024-10-11,Rice,15
+2024-10-11,Shampoo,26
+2024-10-11,Soap,17
+2024-10-11,Soft Drink,21
+2024-10-11,Yogurt,16
+2024-10-12,Biscuits,6
+2024-10-12,Bread,17
+2024-10-12,Butter,13
+2024-10-12,Chips,16
+2024-10-12,Chocolate,24
+2024-10-12,Cooking Oil,13
+2024-10-12,Milk,13
+2024-10-12,Rice,9
+2024-10-12,Shampoo,33
+2024-10-12,Soap,37
+2024-10-12,Soft Drink,17
+2024-10-12,Yogurt,11
+2024-10-13,Biscuits,20
+2024-10-13,Bread,20
+2024-10-13,Butter,20
+2024-10-13,Chips,12
+2024-10-13,Chocolate,13
+2024-10-13,Cooking Oil,20
+2024-10-13,Milk,18
+2024-10-13,Rice,26
+2024-10-13,Shampoo,14
+2024-10-13,Soap,26
+2024-10-13,Soft Drink,15
+2024-10-13,Yogurt,26
+2024-10-14,Biscuits,25
+2024-10-14,Bread,21
+2024-10-14,Butter,19
+2024-10-14,Chips,21
+2024-10-14,Chocolate,11
+2024-10-14,Cooking Oil,31
+2024-10-14,Milk,29
+2024-10-14,Rice,7
+2024-10-14,Shampoo,4
+2024-10-14,Soap,17
+2024-10-14,Soft Drink,31
+2024-10-14,Yogurt,19
+2024-10-15,Biscuits,10
+2024-10-15,Bread,8
+2024-10-15,Butter,12
+2024-10-15,Chips,1
+2024-10-15,Chocolate,13
+2024-10-15,Cooking Oil,9
+2024-10-15,Milk,15
+2024-10-15,Rice,17
+2024-10-15,Shampoo,6
+2024-10-15,Soap,12
+2024-10-15,Soft Drink,22
+2024-10-15,Yogurt,4
+2024-10-16,Biscuits,14
+2024-10-16,Bread,10
+2024-10-16,Butter,17
+2024-10-16,Chips,23
+2024-10-16,Chocolate,21
+2024-10-16,Cooking Oil,12
+2024-10-16,Milk,25
+2024-10-16,Rice,16
+2024-10-16,Shampoo,13
+2024-10-16,Soap,20
+2024-10-16,Soft Drink,11
+2024-10-16,Yogurt,26
+2024-10-17,Biscuits,14
+2024-10-17,Bread,22
+2024-10-17,Butter,25
+2024-10-17,Chips,11
+2024-10-17,Chocolate,11
+2024-10-17,Cooking Oil,4
+2024-10-17,Milk,17
+2024-10-17,Rice,8
+2024-10-17,Shampoo,11
+2024-10-17,Soap,8
+2024-10-17,Soft Drink,30
+2024-10-17,Yogurt,24
+2024-10-18,Biscuits,8
+2024-10-18,Bread,10
+2024-10-18,Butter,32
+2024-10-18,Chips,26
+2024-10-18,Chocolate,25
+2024-10-18,Cooking Oil,18
+2024-10-18,Milk,7
+2024-10-18,Rice,12
+2024-10-18,Shampoo,19
+2024-10-18,Soap,24
+2024-10-18,Soft Drink,15
+2024-10-18,Yogurt,44
+2024-10-19,Biscuits,13
+2024-10-19,Bread,23
+2024-10-19,Butter,20
+2024-10-19,Chips,10
+2024-10-19,Chocolate,22
+2024-10-19,Cooking Oil,6
+2024-10-19,Milk,31
+2024-10-19,Rice,19
+2024-10-19,Shampoo,19
+2024-10-19,Soap,18
+2024-10-19,Soft Drink,13
+2024-10-19,Yogurt,19
+2024-10-20,Biscuits,17
+2024-10-20,Bread,10
+2024-10-20,Butter,34
+2024-10-20,Chips,13
+2024-10-20,Chocolate,26
+2024-10-20,Cooking Oil,17
+2024-10-20,Milk,13
+2024-10-20,Rice,6
+2024-10-20,Shampoo,17
+2024-10-20,Soap,17
+2024-10-20,Soft Drink,13
+2024-10-20,Yogurt,37
+2024-10-21,Biscuits,9
+2024-10-21,Bread,23
+2024-10-21,Butter,8
+2024-10-21,Chips,31
+2024-10-21,Chocolate,26
+2024-10-21,Cooking Oil,22
+2024-10-21,Milk,4
+2024-10-21,Rice,11
+2024-10-21,Shampoo,19
+2024-10-21,Soap,36
+2024-10-21,Soft Drink,18
+2024-10-21,Yogurt,23
+2024-10-22,Biscuits,17
+2024-10-22,Bread,5
+2024-10-22,Butter,13
+2024-10-22,Chips,17
+2024-10-22,Chocolate,20
+2024-10-22,Cooking Oil,13
+2024-10-22,Milk,20
+2024-10-22,Rice,11
+2024-10-22,Shampoo,1
+2024-10-22,Soap,14
+2024-10-22,Soft Drink,29
+2024-10-22,Yogurt,6
+2024-10-23,Biscuits,32
+2024-10-23,Bread,13
+2024-10-23,Butter,19
+2024-10-23,Chips,6
+2024-10-23,Chocolate,19
+2024-10-23,Cooking Oil,7
+2024-10-23,Milk,16
+2024-10-23,Rice,30
+2024-10-23,Shampoo,9
+2024-10-23,Soap,19
+2024-10-23,Soft Drink,1
+2024-10-23,Yogurt,8
+2024-10-24,Biscuits,30
+2024-10-24,Bread,21
+2024-10-24,Butter,6
+2024-10-24,Chips,18
+2024-10-24,Chocolate,26
+2024-10-24,Cooking Oil,7
+2024-10-24,Milk,29
+2024-10-24,Rice,19
+2024-10-24,Shampoo,10
+2024-10-24,Soap,27
+2024-10-24,Soft Drink,20
+2024-10-24,Yogurt,19
+2024-10-25,Biscuits,19
+2024-10-25,Bread,10
+2024-10-25,Butter,21
+2024-10-25,Chips,3
+2024-10-25,Chocolate,25
+2024-10-25,Cooking Oil,5
+2024-10-25,Milk,21
+2024-10-25,Rice,3
+2024-10-25,Shampoo,23
+2024-10-25,Soap,13
+2024-10-25,Soft Drink,10
+2024-10-25,Yogurt,11
+2024-10-26,Biscuits,15
+2024-10-26,Bread,31
+2024-10-26,Butter,9
+2024-10-26,Chips,14
+2024-10-26,Chocolate,25
+2024-10-26,Cooking Oil,10
+2024-10-26,Milk,24
+2024-10-26,Rice,23
+2024-10-26,Shampoo,15
+2024-10-26,Soap,25
+2024-10-26,Soft Drink,13
+2024-10-26,Yogurt,17
+2024-10-27,Biscuits,10
+2024-10-27,Bread,22
+2024-10-27,Butter,26
+2024-10-27,Chips,16
+2024-10-27,Chocolate,17
+2024-10-27,Cooking Oil,18
+2024-10-27,Milk,14
+2024-10-27,Rice,6
+2024-10-27,Shampoo,12
+2024-10-27,Soap,27
+2024-10-27,Soft Drink,15
+2024-10-27,Yogurt,17
+2024-10-28,Biscuits,23
+2024-10-28,Bread,19
+2024-10-28,Butter,25
+2024-10-28,Chips,8
+2024-10-28,Chocolate,20
+2024-10-28,Cooking Oil,18
+2024-10-28,Milk,17
+2024-10-28,Rice,5
+2024-10-28,Shampoo,16
+2024-10-28,Soap,29
+2024-10-28,Soft Drink,35
+2024-10-28,Yogurt,19
+2024-10-29,Biscuits,14
+2024-10-29,Bread,15
+2024-10-29,Butter,5
+2024-10-29,Chips,16
+2024-10-29,Chocolate,16
+2024-10-29,Cooking Oil,32
+2024-10-29,Milk,25
+2024-10-29,Rice,16
+2024-10-29,Shampoo,8
+2024-10-29,Soap,20
+2024-10-29,Soft Drink,10
+2024-10-29,Yogurt,8
+2024-10-30,Biscuits,23
+2024-10-30,Bread,8
+2024-10-30,Butter,29
+2024-10-30,Chips,16
+2024-10-30,Chocolate,19
+2024-10-30,Cooking Oil,17
+2024-10-30,Milk,2
+2024-10-30,Rice,14
+2024-10-30,Shampoo,9
+2024-10-30,Soap,21
+2024-10-30,Soft Drink,16
+2024-10-30,Yogurt,23
+2024-10-31,Biscuits,29
+2024-10-31,Bread,19
+2024-10-31,Butter,28
+2024-10-31,Chips,14
+2024-10-31,Chocolate,10
+2024-10-31,Cooking Oil,22
+2024-10-31,Milk,16
+2024-10-31,Rice,13
+2024-10-31,Shampoo,24
+2024-10-31,Soap,11
+2024-10-31,Soft Drink,17
+2024-10-31,Yogurt,23
+2024-11-01,Biscuits,13
+2024-11-01,Bread,10
+2024-11-01,Butter,15
+2024-11-01,Chips,20
+2024-11-01,Chocolate,18
+2024-11-01,Cooking Oil,29
+2024-11-01,Milk,15
+2024-11-01,Rice,34
+2024-11-01,Shampoo,8
+2024-11-01,Soap,14
+2024-11-01,Soft Drink,16
+2024-11-01,Yogurt,20
+2024-11-02,Biscuits,9
+2024-11-02,Bread,16
+2024-11-02,Butter,10
+2024-11-02,Chips,17
+2024-11-02,Chocolate,24
+2024-11-02,Cooking Oil,17
+2024-11-02,Milk,23
+2024-11-02,Rice,14
+2024-11-02,Shampoo,16
+2024-11-02,Soap,14
+2024-11-02,Soft Drink,12
+2024-11-02,Yogurt,15
+2024-11-03,Biscuits,10
+2024-11-03,Bread,11
+2024-11-03,Butter,18
+2024-11-03,Chips,12
+2024-11-03,Chocolate,8
+2024-11-03,Cooking Oil,23
+2024-11-03,Milk,16
+2024-11-03,Rice,21
+2024-11-03,Shampoo,19
+2024-11-03,Soap,13
+2024-11-03,Soft Drink,8
+2024-11-03,Yogurt,14
+2024-11-04,Biscuits,16
+2024-11-04,Bread,17
+2024-11-04,Butter,25
+2024-11-04,Chips,18
+2024-11-04,Chocolate,41
+2024-11-04,Cooking Oil,20
+2024-11-04,Milk,18
+2024-11-04,Rice,8
+2024-11-04,Shampoo,16
+2024-11-04,Soap,23
+2024-11-04,Soft Drink,19
+2024-11-04,Yogurt,37
+2024-11-05,Biscuits,15
+2024-11-05,Bread,26
+2024-11-05,Butter,21
+2024-11-05,Chips,23
+2024-11-05,Chocolate,12
+2024-11-05,Cooking Oil,12
+2024-11-05,Milk,17
+2024-11-05,Rice,21
+2024-11-05,Shampoo,9
+2024-11-05,Soap,24
+2024-11-05,Soft Drink,30
+2024-11-05,Yogurt,18
+2024-11-06,Biscuits,23
+2024-11-06,Bread,29
+2024-11-06,Butter,16
+2024-11-06,Chips,17
+2024-11-06,Chocolate,8
+2024-11-06,Cooking Oil,11
+2024-11-06,Milk,30
+2024-11-06,Rice,24
+2024-11-06,Shampoo,37
+2024-11-06,Soap,13
+2024-11-06,Soft Drink,14
+2024-11-06,Yogurt,22
+2024-11-07,Biscuits,22
+2024-11-07,Bread,17
+2024-11-07,Butter,10
+2024-11-07,Chips,26
+2024-11-07,Cooking Oil,19
+2024-11-07,Milk,10
+2024-11-07,Rice,24
+2024-11-07,Shampoo,27
+2024-11-07,Soap,14
+2024-11-07,Soft Drink,23
+2024-11-07,Yogurt,12
+2024-11-08,Biscuits,12
+2024-11-08,Bread,2
+2024-11-08,Butter,19
+2024-11-08,Chips,14
+2024-11-08,Chocolate,7
+2024-11-08,Cooking Oil,26
+2024-11-08,Milk,25
+2024-11-08,Rice,8
+2024-11-08,Shampoo,22
+2024-11-08,Soap,29
+2024-11-08,Yogurt,17
+2024-11-09,Biscuits,27
+2024-11-09,Bread,13
+2024-11-09,Butter,14
+2024-11-09,Chips,17
+2024-11-09,Chocolate,23
+2024-11-09,Cooking Oil,7
+2024-11-09,Milk,27
+2024-11-09,Rice,10
+2024-11-09,Shampoo,15
+2024-11-09,Soap,25
+2024-11-09,Soft Drink,21
+2024-11-09,Yogurt,15
+2024-11-10,Biscuits,11
+2024-11-10,Bread,6
+2024-11-10,Butter,21
+2024-11-10,Chips,3
+2024-11-10,Chocolate,24
+2024-11-10,Cooking Oil,11
+2024-11-10,Milk,23
+2024-11-10,Rice,23
+2024-11-10,Shampoo,17
+2024-11-10,Soap,12
+2024-11-10,Soft Drink,14
+2024-11-10,Yogurt,15
+2024-11-11,Biscuits,17
+2024-11-11,Bread,8
+2024-11-11,Butter,16
+2024-11-11,Chips,4
+2024-11-11,Chocolate,31
+2024-11-11,Cooking Oil,15
+2024-11-11,Milk,11
+2024-11-11,Rice,9
+2024-11-11,Shampoo,18
+2024-11-11,Soap,5
+2024-11-11,Soft Drink,14
+2024-11-11,Yogurt,19
+2024-11-12,Biscuits,16
+2024-11-12,Bread,11
+2024-11-12,Butter,21
+2024-11-12,Chips,15
+2024-11-12,Chocolate,20
+2024-11-12,Cooking Oil,16
+2024-11-12,Milk,11
+2024-11-12,Rice,3
+2024-11-12,Shampoo,6
+2024-11-12,Soap,19
+2024-11-12,Soft Drink,11
+2024-11-12,Yogurt,11
+2024-11-13,Biscuits,10
+2024-11-13,Bread,10
+2024-11-13,Butter,17
+2024-11-13,Chips,18
+2024-11-13,Chocolate,7
+2024-11-13,Cooking Oil,14
+2024-11-13,Milk,22
+2024-11-13,Rice,25
+2024-11-13,Shampoo,16
+2024-11-13,Soap,13
+2024-11-13,Soft Drink,17
+2024-11-13,Yogurt,24
+2024-11-14,Biscuits,14
+2024-11-14,Bread,24
+2024-11-14,Butter,13
+2024-11-14,Chips,16
+2024-11-14,Chocolate,29
+2024-11-14,Cooking Oil,33
+2024-11-14,Milk,14
+2024-11-14,Rice,16
+2024-11-14,Shampoo,53
+2024-11-14,Soap,21
+2024-11-14,Soft Drink,13
+2024-11-14,Yogurt,30
+2024-11-15,Biscuits,10
+2024-11-15,Bread,20
+2024-11-15,Butter,17
+2024-11-15,Chips,14
+2024-11-15,Chocolate,19
+2024-11-15,Cooking Oil,24
+2024-11-15,Milk,15
+2024-11-15,Rice,6
+2024-11-15,Shampoo,15
+2024-11-15,Soap,11
+2024-11-15,Soft Drink,15
+2024-11-15,Yogurt,20
+2024-11-16,Biscuits,8
+2024-11-16,Bread,9
+2024-11-16,Butter,12
+2024-11-16,Chips,19
+2024-11-16,Chocolate,19
+2024-11-16,Cooking Oil,23
+2024-11-16,Milk,21
+2024-11-16,Rice,16
+2024-11-16,Shampoo,16
+2024-11-16,Soap,14
+2024-11-16,Soft Drink,11
+2024-11-16,Yogurt,18
+2024-11-17,Biscuits,9
+2024-11-17,Bread,20
+2024-11-17,Butter,9
+2024-11-17,Chips,21
+2024-11-17,Chocolate,26
+2024-11-17,Cooking Oil,15
+2024-11-17,Milk,31
+2024-11-17,Rice,14
+2024-11-17,Shampoo,21
+2024-11-17,Soap,43
+2024-11-17,Soft Drink,17
+2024-11-17,Yogurt,16
+2024-11-18,Biscuits,17
+2024-11-18,Bread,10
+2024-11-18,Butter,11
+2024-11-18,Chips,12
+2024-11-18,Chocolate,18
+2024-11-18,Cooking Oil,4
+2024-11-18,Milk,16
+2024-11-18,Rice,22
+2024-11-18,Shampoo,10
+2024-11-18,Soap,22
+2024-11-18,Soft Drink,12
+2024-11-18,Yogurt,12
+2024-11-19,Biscuits,24
+2024-11-19,Bread,14
+2024-11-19,Butter,10
+2024-11-19,Chips,15
+2024-11-19,Chocolate,26
+2024-11-19,Cooking Oil,34
+2024-11-19,Milk,14
+2024-11-19,Rice,13
+2024-11-19,Shampoo,18
+2024-11-19,Soap,27
+2024-11-19,Soft Drink,11
+2024-11-19,Yogurt,12
+2024-11-20,Biscuits,11
+2024-11-20,Bread,19
+2024-11-20,Butter,9
+2024-11-20,Chips,21
+2024-11-20,Chocolate,14
+2024-11-20,Cooking Oil,21
+2024-11-20,Milk,11
+2024-11-20,Rice,14
+2024-11-20,Shampoo,7
+2024-11-20,Soap,26
+2024-11-20,Soft Drink,12
+2024-11-20,Yogurt,16
+2024-11-21,Biscuits,21
+2024-11-21,Bread,18
+2024-11-21,Butter,17
+2024-11-21,Chips,20
+2024-11-21,Chocolate,25
+2024-11-21,Cooking Oil,14
+2024-11-21,Milk,8
+2024-11-21,Rice,19
+2024-11-21,Shampoo,16
+2024-11-21,Soap,6
+2024-11-21,Soft Drink,25
+2024-11-21,Yogurt,25
+2024-11-22,Biscuits,19
+2024-11-22,Bread,18
+2024-11-22,Butter,41
+2024-11-22,Chips,20
+2024-11-22,Chocolate,17
+2024-11-22,Cooking Oil,20
+2024-11-22,Milk,10
+2024-11-22,Rice,3
+2024-11-22,Shampoo,21
+2024-11-22,Soap,21
+2024-11-22,Soft Drink,16
+2024-11-22,Yogurt,18
+2024-11-23,Biscuits,20
+2024-11-23,Bread,5
+2024-11-23,Butter,22
+2024-11-23,Chips,17
+2024-11-23,Chocolate,19
+2024-11-23,Cooking Oil,17
+2024-11-23,Milk,15
+2024-11-23,Rice,25
+2024-11-23,Shampoo,21
+2024-11-23,Soap,23
+2024-11-23,Soft Drink,14
+2024-11-23,Yogurt,17
+2024-11-24,Biscuits,24
+2024-11-24,Bread,17
+2024-11-24,Butter,17
+2024-11-24,Chips,16
+2024-11-24,Chocolate,8
+2024-11-24,Cooking Oil,10
+2024-11-24,Milk,16
+2024-11-24,Rice,15
+2024-11-24,Shampoo,13
+2024-11-24,Soap,24
+2024-11-24,Soft Drink,9
+2024-11-24,Yogurt,8
+2024-11-25,Biscuits,18
+2024-11-25,Bread,10
+2024-11-25,Butter,16
+2024-11-25,Chips,2
+2024-11-25,Chocolate,7
+2024-11-25,Cooking Oil,15
+2024-11-25,Milk,20
+2024-11-25,Rice,8
+2024-11-25,Shampoo,13
+2024-11-25,Soap,17
+2024-11-25,Soft Drink,20
+2024-11-25,Yogurt,11
+2024-11-26,Biscuits,8
+2024-11-26,Bread,22
+2024-11-26,Butter,20
+2024-11-26,Chips,8
+2024-11-26,Chocolate,15
+2024-11-26,Cooking Oil,9
+2024-11-26,Milk,14
+2024-11-26,Rice,32
+2024-11-26,Shampoo,9
+2024-11-26,Soap,8
+2024-11-26,Soft Drink,12
+2024-11-26,Yogurt,27
+2024-11-27,Biscuits,29
+2024-11-27,Bread,4
+2024-11-27,Butter,11
+2024-11-27,Chips,18
+2024-11-27,Chocolate,12
+2024-11-27,Cooking Oil,12
+2024-11-27,Milk,35
+2024-11-27,Rice,11
+2024-11-27,Shampoo,13
+2024-11-27,Soap,9
+2024-11-27,Soft Drink,26
+2024-11-27,Yogurt,20
+2024-11-28,Biscuits,24
+2024-11-28,Bread,25
+2024-11-28,Butter,29
+2024-11-28,Chips,29
+2024-11-28,Chocolate,9
+2024-11-28,Cooking Oil,10
+2024-11-28,Milk,13
+2024-11-28,Rice,21
+2024-11-28,Shampoo,24
+2024-11-28,Soap,21
+2024-11-28,Soft Drink,20
+2024-11-28,Yogurt,25
+2024-11-29,Biscuits,15
+2024-11-29,Bread,22
+2024-11-29,Butter,15
+2024-11-29,Chips,23
+2024-11-29,Chocolate,26
+2024-11-29,Cooking Oil,4
+2024-11-29,Milk,21
+2024-11-29,Rice,31
+2024-11-29,Shampoo,20
+2024-11-29,Soap,20
+2024-11-29,Soft Drink,4
+2024-11-29,Yogurt,8
+2024-11-30,Biscuits,14
+2024-11-30,Bread,12
+2024-11-30,Butter,20
+2024-11-30,Chips,18
+2024-11-30,Chocolate,7
+2024-11-30,Cooking Oil,14
+2024-11-30,Milk,13
+2024-11-30,Rice,33
+2024-11-30,Shampoo,20
+2024-11-30,Soap,17
+2024-11-30,Soft Drink,7
+2024-11-30,Yogurt,13
+2024-12-01,Biscuits,24
+2024-12-01,Bread,20
+2024-12-01,Butter,26
+2024-12-01,Chips,15
+2024-12-01,Chocolate,25
+2024-12-01,Cooking Oil,7
+2024-12-01,Milk,9
+2024-12-01,Rice,5
+2024-12-01,Shampoo,30
+2024-12-01,Soap,13
+2024-12-01,Soft Drink,22
+2024-12-01,Yogurt,12
+2024-12-02,Biscuits,22
+2024-12-02,Bread,12
+2024-12-02,Butter,6
+2024-12-02,Chips,11
+2024-12-02,Chocolate,28
+2024-12-02,Cooking Oil,28
+2024-12-02,Milk,6
+2024-12-02,Rice,25
+2024-12-02,Shampoo,21
+2024-12-02,Soap,24
+2024-12-02,Soft Drink,14
+2024-12-02,Yogurt,13
+2024-12-03,Biscuits,28
+2024-12-03,Bread,19
+2024-12-03,Butter,17
+2024-12-03,Chips,16
+2024-12-03,Chocolate,16
+2024-12-03,Cooking Oil,18
+2024-12-03,Milk,20
+2024-12-03,Rice,15
+2024-12-03,Shampoo,8
+2024-12-03,Soap,14
+2024-12-03,Soft Drink,23
+2024-12-03,Yogurt,22
+2024-12-04,Biscuits,28
+2024-12-04,Bread,7
+2024-12-04,Butter,18
+2024-12-04,Chips,13
+2024-12-04,Chocolate,9
+2024-12-04,Cooking Oil,15
+2024-12-04,Milk,14
+2024-12-04,Rice,24
+2024-12-04,Shampoo,14
+2024-12-04,Soap,25
+2024-12-04,Soft Drink,9
+2024-12-04,Yogurt,25
+2024-12-05,Biscuits,21
+2024-12-05,Bread,20
+2024-12-05,Butter,6
+2024-12-05,Chips,18
+2024-12-05,Chocolate,11
+2024-12-05,Cooking Oil,23
+2024-12-05,Milk,15
+2024-12-05,Rice,25
+2024-12-05,Shampoo,16
+2024-12-05,Soap,13
+2024-12-05,Soft Drink,13
+2024-12-05,Yogurt,21
+2024-12-06,Biscuits,14
+2024-12-06,Bread,9
+2024-12-06,Butter,28
+2024-12-06,Chips,11
+2024-12-06,Chocolate,15
+2024-12-06,Cooking Oil,27
+2024-12-06,Milk,4
+2024-12-06,Rice,8
+2024-12-06,Shampoo,18
+2024-12-06,Soap,9
+2024-12-06,Soft Drink,28
+2024-12-06,Yogurt,20
+2024-12-07,Biscuits,22
+2024-12-07,Bread,9
+2024-12-07,Butter,12
+2024-12-07,Chips,10
+2024-12-07,Chocolate,27
+2024-12-07,Cooking Oil,24
+2024-12-07,Milk,14
+2024-12-07,Rice,5
+2024-12-07,Shampoo,9
+2024-12-07,Soap,39
+2024-12-07,Soft Drink,26
+2024-12-07,Yogurt,26
+2024-12-08,Biscuits,19
+2024-12-08,Bread,14
+2024-12-08,Butter,17
+2024-12-08,Chips,12
+2024-12-08,Chocolate,4
+2024-12-08,Cooking Oil,10
+2024-12-08,Milk,47
+2024-12-08,Rice,17
+2024-12-08,Shampoo,18
+2024-12-08,Soap,14
+2024-12-08,Soft Drink,16
+2024-12-08,Yogurt,9
+2024-12-09,Biscuits,13
+2024-12-09,Bread,3
+2024-12-09,Butter,12
+2024-12-09,Chips,26
+2024-12-09,Chocolate,23
+2024-12-09,Cooking Oil,17
+2024-12-09,Milk,24
+2024-12-09,Rice,27
+2024-12-09,Shampoo,11
+2024-12-09,Soap,17
+2024-12-09,Soft Drink,1
+2024-12-09,Yogurt,28
+2024-12-10,Biscuits,16
+2024-12-10,Bread,10
+2024-12-10,Butter,9
+2024-12-10,Chips,19
+2024-12-10,Chocolate,9
+2024-12-10,Cooking Oil,8
+2024-12-10,Milk,20
+2024-12-10,Rice,20
+2024-12-10,Shampoo,28
+2024-12-10,Soap,35
+2024-12-10,Soft Drink,24
+2024-12-10,Yogurt,24
+2024-12-11,Biscuits,18
+2024-12-11,Bread,29
+2024-12-11,Butter,20
+2024-12-11,Chips,6
+2024-12-11,Chocolate,35
+2024-12-11,Cooking Oil,19
+2024-12-11,Milk,12
+2024-12-11,Rice,25
+2024-12-11,Shampoo,13
+2024-12-11,Soap,12
+2024-12-11,Soft Drink,14
+2024-12-11,Yogurt,10
+2024-12-12,Biscuits,23
+2024-12-12,Bread,19
+2024-12-12,Butter,26
+2024-12-12,Chips,16
+2024-12-12,Chocolate,13
+2024-12-12,Cooking Oil,13
+2024-12-12,Milk,9
+2024-12-12,Rice,12
+2024-12-12,Shampoo,16
+2024-12-12,Soap,16
+2024-12-12,Soft Drink,32
+2024-12-12,Yogurt,23
+2024-12-13,Biscuits,11
+2024-12-13,Bread,11
+2024-12-13,Butter,20
+2024-12-13,Chips,32
+2024-12-13,Chocolate,19
+2024-12-13,Cooking Oil,26
+2024-12-13,Milk,5
+2024-12-13,Rice,22
+2024-12-13,Shampoo,22
+2024-12-13,Soap,10
+2024-12-13,Soft Drink,12
+2024-12-13,Yogurt,13
+2024-12-14,Biscuits,23
+2024-12-14,Bread,16
+2024-12-14,Butter,12
+2024-12-14,Chips,3
+2024-12-14,Chocolate,12
+2024-12-14,Cooking Oil,14
+2024-12-14,Milk,16
+2024-12-14,Rice,23
+2024-12-14,Shampoo,19
+2024-12-14,Soap,5
+2024-12-14,Soft Drink,23
+2024-12-14,Yogurt,9
+2024-12-15,Biscuits,30
+2024-12-15,Bread,12
+2024-12-15,Butter,19
+2024-12-15,Chips,27
+2024-12-15,Chocolate,8
+2024-12-15,Cooking Oil,16
+2024-12-15,Milk,12
+2024-12-15,Rice,16
+2024-12-15,Shampoo,41
+2024-12-15,Soap,20
+2024-12-15,Soft Drink,22
+2024-12-15,Yogurt,23
+2024-12-16,Biscuits,18
+2024-12-16,Bread,20
+2024-12-16,Butter,18
+2024-12-16,Chips,15
+2024-12-16,Chocolate,5
+2024-12-16,Cooking Oil,18
+2024-12-16,Milk,5
+2024-12-16,Rice,23
+2024-12-16,Shampoo,16
+2024-12-16,Soap,23
+2024-12-16,Soft Drink,9
+2024-12-16,Yogurt,12
+2024-12-17,Biscuits,25
+2024-12-17,Bread,26
+2024-12-17,Butter,8
+2024-12-17,Chips,13
+2024-12-17,Chocolate,16
+2024-12-17,Cooking Oil,5
+2024-12-17,Milk,16
+2024-12-17,Rice,9
+2024-12-17,Shampoo,40
+2024-12-17,Soap,8
+2024-12-17,Soft Drink,15
+2024-12-17,Yogurt,16
+2024-12-18,Biscuits,12
+2024-12-18,Bread,11
+2024-12-18,Butter,17
+2024-12-18,Chips,10
+2024-12-18,Chocolate,16
+2024-12-18,Cooking Oil,14
+2024-12-18,Milk,12
+2024-12-18,Rice,13
+2024-12-18,Shampoo,19
+2024-12-18,Soap,13
+2024-12-18,Soft Drink,8
+2024-12-18,Yogurt,14
+2024-12-19,Biscuits,17
+2024-12-19,Bread,32
+2024-12-19,Butter,6
+2024-12-19,Chips,27
+2024-12-19,Chocolate,6
+2024-12-19,Cooking Oil,31
+2024-12-19,Milk,27
+2024-12-19,Rice,13
+2024-12-19,Shampoo,12
+2024-12-19,Soap,20
+2024-12-19,Soft Drink,24
+2024-12-19,Yogurt,28
+2024-12-20,Biscuits,10
+2024-12-20,Bread,25
+2024-12-20,Butter,14
+2024-12-20,Chips,10
+2024-12-20,Chocolate,4
+2024-12-20,Cooking Oil,19
+2024-12-20,Milk,9
+2024-12-20,Rice,12
+2024-12-20,Shampoo,22
+2024-12-20,Soap,5
+2024-12-20,Soft Drink,28
+2024-12-20,Yogurt,26
+2024-12-21,Biscuits,14
+2024-12-21,Bread,8
+2024-12-21,Butter,27
+2024-12-21,Chips,14
+2024-12-21,Chocolate,23
+2024-12-21,Cooking Oil,15
+2024-12-21,Milk,11
+2024-12-21,Rice,25
+2024-12-21,Shampoo,8
+2024-12-21,Soap,43
+2024-12-21,Soft Drink,17
+2024-12-21,Yogurt,17
+2024-12-22,Biscuits,17
+2024-12-22,Bread,7
+2024-12-22,Butter,6
+2024-12-22,Chips,13
+2024-12-22,Chocolate,18
+2024-12-22,Cooking Oil,19
+2024-12-22,Milk,26
+2024-12-22,Rice,27
+2024-12-22,Shampoo,31
+2024-12-22,Soap,10
+2024-12-22,Soft Drink,13
+2024-12-22,Yogurt,18
+2024-12-23,Biscuits,6
+2024-12-23,Bread,18
+2024-12-23,Butter,23
+2024-12-23,Chips,15
+2024-12-23,Chocolate,6
+2024-12-23,Cooking Oil,22
+2024-12-23,Milk,23
+2024-12-23,Rice,12
+2024-12-23,Shampoo,15
+2024-12-23,Soap,16
+2024-12-23,Soft Drink,27
+2024-12-23,Yogurt,12
+2024-12-24,Biscuits,24
+2024-12-24,Bread,15
+2024-12-24,Butter,24
+2024-12-24,Chips,10
+2024-12-24,Chocolate,13
+2024-12-24,Cooking Oil,21
+2024-12-24,Milk,11
+2024-12-24,Rice,6
+2024-12-24,Shampoo,22
+2024-12-24,Soap,23
+2024-12-24,Soft Drink,17
+2024-12-24,Yogurt,24
+2024-12-25,Biscuits,7
+2024-12-25,Bread,12
+2024-12-25,Butter,21
+2024-12-25,Chips,14
+2024-12-25,Chocolate,13
+2024-12-25,Cooking Oil,26
+2024-12-25,Milk,10
+2024-12-25,Rice,10
+2024-12-25,Shampoo,25
+2024-12-25,Soap,12
+2024-12-25,Soft Drink,23
+2024-12-25,Yogurt,21
+2024-12-26,Biscuits,22
+2024-12-26,Bread,21
+2024-12-26,Butter,22
+2024-12-26,Chips,19
+2024-12-26,Chocolate,11
+2024-12-26,Cooking Oil,7
+2024-12-26,Milk,16
+2024-12-26,Rice,15
+2024-12-26,Shampoo,13
+2024-12-26,Soap,11
+2024-12-26,Soft Drink,7
+2024-12-26,Yogurt,18
+2024-12-27,Biscuits,3
+2024-12-27,Bread,28
+2024-12-27,Butter,14
+2024-12-27,Chips,24
+2024-12-27,Chocolate,11
+2024-12-27,Cooking Oil,9
+2024-12-27,Milk,15
+2024-12-27,Rice,26
+2024-12-27,Shampoo,29
+2024-12-27,Soap,42
+2024-12-27,Soft Drink,23
+2024-12-27,Yogurt,25
+2024-12-28,Biscuits,20
+2024-12-28,Bread,20
+2024-12-28,Butter,21
+2024-12-28,Chips,10
+2024-12-28,Chocolate,21
+2024-12-28,Cooking Oil,22
+2024-12-28,Milk,30
+2024-12-28,Rice,9
+2024-12-28,Shampoo,19
+2024-12-28,Soap,22
+2024-12-28,Soft Drink,16
+2024-12-28,Yogurt,25
+2024-12-29,Biscuits,17
+2024-12-29,Bread,17
+2024-12-29,Butter,8
+2024-12-29,Chips,21
+2024-12-29,Chocolate,15
+2024-12-29,Cooking Oil,14
+2024-12-29,Milk,6
+2024-12-29,Rice,23
+2024-12-29,Shampoo,17
+2024-12-29,Soap,17
+2024-12-29,Soft Drink,19
+2024-12-29,Yogurt,33
+2024-12-30,Biscuits,11
+2024-12-30,Bread,16
+2024-12-30,Butter,26
+2024-12-30,Chips,13
+2024-12-30,Chocolate,22
+2024-12-30,Cooking Oil,12
+2024-12-30,Milk,10
+2024-12-30,Rice,22
+2024-12-30,Shampoo,11
+2024-12-30,Soap,27
+2024-12-30,Soft Drink,16
+2024-12-30,Yogurt,19
+2024-12-31,Biscuits,9
+2024-12-31,Bread,10
+2024-12-31,Butter,12
+2024-12-31,Chips,15
+2024-12-31,Chocolate,8
+2024-12-31,Cooking Oil,18
+2024-12-31,Milk,14
+2024-12-31,Rice,22
+2024-12-31,Shampoo,23
+2024-12-31,Soap,15
+2024-12-31,Soft Drink,10
+2024-12-31,Yogurt,15
